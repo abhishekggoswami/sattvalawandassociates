@@ -577,6 +577,7 @@ main .testimonial-context{margin-top:49px;margin-bottom:0}
 main .testimonials-section .testimonial-note{margin-top:20px}
 @media(max-width:900px){main .testimonials-section.testimonials-section{width:min(100% - 3rem,640px);padding:76px 0}main .testimonials-heading .testimonials-intro{font-size:14px}main .testimonial-context{margin-top:37px}}
 /* Single-row header with an always-available search field */
+.site-header .header-phone-links{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
 @media(min-width:901px){
   .site-header .topbar{height:116px;display:grid;grid-template-columns:clamp(225px,15vw,290px) auto minmax(0,1fr) auto;gap:clamp(18px,2vw,36px);padding:0 max(4.2vw,32px)}
   .site-header .site-search-panel{position:relative;inset:auto;top:auto;left:auto;display:block;width:100%;transform:none;background:transparent;box-shadow:none;animation:none}
@@ -871,10 +872,14 @@ main .testimonials-section .testimonial-note{margin-top:20px}
 @media(min-width:901px){
   .article-landing-hero .article-landing-copy{top:25%;left:46vw;width:min(42vw,670px);max-width:calc(100% - 46vw)}
   .article-landing-hero .article-landing-copy h1{max-width:100%;font-size:clamp(29px,2.35vw,43px);line-height:1.24}
+  .article-landing-hero .article-landing-copy h1.hero-title--long{font-size:clamp(28px,2.2vw,40px)}
+  .article-landing-hero .article-landing-copy h1.hero-title--extra-long{font-size:clamp(26px,2vw,37px)}
 }
 @media(max-width:900px){
   .article-landing-hero .article-landing-copy{top:24%;left:10%;width:80%}
   .article-landing-hero .article-landing-copy h1{font-size:clamp(29px,7.2vw,39px);line-height:1.22}
+  .article-landing-hero .article-landing-copy h1.hero-title--long{font-size:clamp(27px,6.8vw,36px)}
+  .article-landing-hero .article-landing-copy h1.hero-title--extra-long{font-size:clamp(25px,6.3vw,34px)}
 }
 
 /* The About page remains complete without client photography. */
@@ -896,8 +901,6 @@ main.about-page .about-approach-list span{color:#8e8c60;font-size:10px;font-weig
 main.about-page .about-approach-list h3{max-width:240px;margin:45px 0 15px;color:#292a1c;font:400 clamp(20px,1.65vw,26px)/1.26 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
 main.about-page .about-approach-list p{max-width:300px;margin:0;color:#65675d;font-size:13px;line-height:1.75}
 main.about-page .about-approach-link{margin-top:29px}
-main.about-page>footer{background:#202108}
-main.about-page>footer::before{display:none}
 @media(max-width:900px){
   main.about-page .about-story-grid{grid-template-columns:1fr}
   main.about-page .about-approach{padding-top:76px;padding-bottom:76px}
@@ -938,6 +941,15 @@ main.practice-area-page .practice-workflow-intro>p:not(.eyebrow){max-width:260px
 main.practice-area-page .practice-workflow-step{display:flex;flex-direction:column;justify-content:space-between;border-left:1px solid #d5d7ca}
 main.practice-area-page .practice-workflow-step span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.15em}
 main.practice-area-page .practice-workflow-step strong{max-width:190px;color:#252610;font:400 clamp(17px,1.45vw,22px)/1.24 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
+main.practice-engagement{padding:clamp(76px,8vw,126px) 0;background:#f1f3ed}
+main.practice-engagement-grid{display:grid;grid-template-columns:.85fr 1fr 1fr;gap:clamp(34px,7vw,110px);align-items:start}
+main.practice-engagement h2{margin:0;color:#292a1c;font:400 clamp(34px,3.8vw,57px)/1.16 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main.practice-engagement h2 em{color:#8e8c60}
+main.practice-engagement-list{padding-top:4px}
+main.practice-engagement-list>.eyebrow{margin:0 0 20px}
+main.practice-engagement-list>p:not(.eyebrow){display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;margin:0;padding:18px 0;border-top:1px solid #d5d7ca;color:#5b5d52;font-size:13px;line-height:1.75}
+main.practice-engagement-list>p:not(.eyebrow):last-child{border-bottom:1px solid #d5d7ca}
+main.practice-engagement-list span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.14em}
 @media(max-width:900px){
   main.practice-area-page .practice-overview{min-height:0;padding:76px 0}
   main.practice-area-page .practice-overview-shell{min-height:0}
@@ -952,6 +964,8 @@ main.practice-area-page .practice-workflow-step strong{max-width:190px;color:#25
   main.practice-area-page .practice-workflow{grid-template-columns:1fr;margin-top:0}
   main.practice-area-page .practice-workflow-intro,main.practice-area-page .practice-workflow-step{min-height:0;padding:25px 23px}
   main.practice-area-page .practice-workflow-step{min-height:108px;border-top:1px solid #d5d7ca;border-left:0}
+  main.practice-engagement{padding:76px 0}
+  main.practice-engagement-grid{grid-template-columns:1fr;gap:34px}
 }
 
 /* A single, recognisable finish for every page-level call to action. */
@@ -1033,9 +1047,13 @@ main .testimonials-section .testimonial-controls{width:100%;margin:27px 0 0;padd
 }
 
 /* Complete, company-style footer shared across the site. */
-main .site-footer .footer-main{grid-template-columns:minmax(260px,1.55fr) repeat(3,minmax(150px,.78fr));gap:clamp(35px,5vw,88px);padding-top:clamp(72px,7vw,110px);padding-bottom:clamp(58px,6vw,88px)}
+main .site-footer .footer-main{grid-template-columns:minmax(230px,1fr) minmax(185px,.76fr) minmax(0,2.7fr);gap:clamp(28px,4vw,64px);padding-top:clamp(72px,7vw,110px);padding-bottom:clamp(58px,6vw,88px)}
 main .site-footer .footer-brand>p{max-width:305px;margin:20px 0 0;color:#cbccbb;font-size:12px;line-height:1.72}
 main .site-footer .footer-main>div:not(.footer-brand){gap:11px}
+main .site-footer .footer-navigation{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:clamp(18px,2.5vw,42px)}
+main .site-footer .footer-nav-group{display:flex;flex-direction:column;align-items:flex-start;gap:11px}
+main .site-footer .footer-nav-group .footer-label{min-height:22px;line-height:1.35}
+main .site-footer .footer-nav-group a{font-size:11px;line-height:1.45}
 main .site-footer .footer-main a{transition:color .2s ease}
 main .site-footer .footer-main a:hover{color:#d2ca92}
 main .site-footer .footer-location{margin-top:4px;color:#a9aa95;font-size:11px}
@@ -1046,10 +1064,13 @@ main .site-footer .footer-bottom span{color:#afb09d}
 @media(max-width:900px){
   main .site-footer .footer-main{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;padding-top:64px;padding-bottom:54px}
   main .site-footer .footer-brand{grid-column:1/-1}
+  main .site-footer .footer-navigation{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 32px}
 }
 @media(max-width:520px){
   main .site-footer .footer-main{grid-template-columns:1fr;gap:33px;padding-top:55px}
   main .site-footer .footer-brand{grid-column:auto}
+  main .site-footer .footer-navigation{grid-column:auto;grid-template-columns:1fr;gap:31px}
+  main .site-footer .footer-nav-group .footer-label{min-height:0}
   main .site-footer .footer-bottom{align-items:flex-start}
   main .site-footer .footer-bottom>div{align-items:flex-start;flex-direction:column;gap:9px}
 }
@@ -1092,13 +1113,152 @@ img,svg{max-width:100%}
   main .testimonials-section .testimonial-controls{padding-left:0;justify-content:center}
 }
 
+/* Make the header wordmark a clearer focal point without changing the footer logo. */
+@media(min-width:901px){
+  .site-header .brand{min-width:166px}
+  .site-header .brand span{font-size:36px;font-weight:700;letter-spacing:-2.3px}
+}
+
+/* Featured services bring the two most-requested matters to the first section after the hero. */
+.featured-services{padding:clamp(76px,8vw,128px) 0;background:#fff}
+.featured-services-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:48px;margin-bottom:clamp(36px,4vw,58px)}
+.featured-services-heading h2{margin:0;color:#292a1c;font:400 clamp(34px,3.8vw,58px)/1.17 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+.featured-services-heading h2 em{color:#8e8c60}
+.featured-services-heading>p{max-width:380px;margin:0 0 5px;color:#5e6055;font-size:14px;line-height:1.8}
+.featured-services-grid{display:grid;grid-template-columns:1.28fr .72fr;border:1px solid #d7d9cc}
+.featured-service-card{position:relative;min-height:510px;padding:clamp(29px,3.2vw,52px);overflow:hidden}
+.featured-service-card>svg{margin-bottom:31px;color:#898860}
+.featured-service-number{position:absolute;top:31px;right:34px;color:#919067;font-size:10px;font-weight:700;letter-spacing:.16em}
+.featured-service-name{margin:0;color:#363727;font:400 clamp(31px,3.4vw,52px)/1.08 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+.featured-service-card h3{max-width:490px;margin:15px 0 15px;color:#5c5e52;font:400 clamp(21px,1.9vw,29px)/1.27 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
+.featured-service-card h3 em{color:#8e8c60}
+.featured-service-card>p:not(.eyebrow){max-width:545px;margin:0;color:#5e6055;font-size:14px;line-height:1.75}
+.incorporation-card{background:#f2f3ed}
+.incorporation-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:35px;border-top:1px solid #d0d2c3;border-left:1px solid #d0d2c3}
+.incorporation-links a{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:72px;padding:16px 18px;border-right:1px solid #d0d2c3;border-bottom:1px solid #d0d2c3;color:#34362a;font:400 13px/1.4 'Libre Baskerville',Georgia,serif;text-decoration:none;transition:background .2s ease,color .2s ease}
+.incorporation-links a:hover{background:#fff;color:#72734c}
+.incorporation-links a:last-child:nth-child(odd){grid-column:1/-1}
+.incorporation-links svg{flex:0 0 auto;color:#8e8c60}
+.registration-card{display:flex;flex-direction:column;background:#292a0f;color:#fff}
+.registration-card>svg{color:#d2ca92}
+.registration-card .featured-service-number{color:#d2ca92}
+.registration-card .featured-service-name{color:#fff}
+.registration-card h3{color:#deded1}
+.registration-card h3 em{color:#d2ca92}
+.registration-card>p:not(.eyebrow){color:#deded1}
+.registration-card .button{align-self:flex-start;margin-top:31px}
+.registration-note{display:grid;grid-template-columns:auto 1fr;gap:8px 13px;margin-top:auto;padding-top:27px;border-top:1px solid rgba(222,222,209,.28)}
+.registration-note span{color:#d2ca92;font-size:10px;font-weight:700;letter-spacing:.14em}
+.registration-note p{margin:0;color:#deded1;font-size:11px;line-height:1.35}
+@media(max-width:900px){
+  .featured-services-heading{display:block}
+  .featured-services-heading>p{max-width:520px;margin-top:20px}
+  .featured-services-grid{grid-template-columns:1fr}
+  .featured-service-card{min-height:0}
+  .registration-card{min-height:420px}
+}
+@media(max-width:560px){
+  .featured-services{padding:76px 0}
+  .featured-service-card{padding:29px 23px}
+  .featured-service-card>svg{margin-bottom:26px}
+  .featured-service-name{font-size:34px}
+  .featured-service-card h3{font-size:23px}
+  .incorporation-links{grid-template-columns:1fr;margin-top:28px}
+  .incorporation-links a:last-child:nth-child(odd){grid-column:auto}
+  .incorporation-links a{min-height:63px;padding:14px 15px}
+}
+
+/* Long-form capability pages use the service name in the hero and a calm, scannable reading rhythm below it. */
+main .service-detail-hero .hero-slide{background-position:center 53%;filter:saturate(.7) contrast(.92)}
+main .service-detail-hero .hero-shade::before{background:rgba(23,26,8,.82)}
+main .service-detail-hero .service-detail-hero-copy,main .practice-hero .practice-hero-copy{left:39vw;width:min(48vw,680px);max-width:calc(100% - 39vw)}
+main .service-detail-hero h1,main .practice-hero h1{max-width:100%;font-size:clamp(36px,3.7vw,56px);line-height:1.14;overflow-wrap:anywhere}
+/* Title tiers keep dynamic content inside the protected right-hand overlay. */
+.hero-title{max-inline-size:100%;text-wrap:balance;overflow-wrap:anywhere}
+main .service-detail-hero h1.hero-title--long,main .practice-hero h1.hero-title--long{font-size:clamp(32px,3.15vw,50px)}
+main .service-detail-hero h1.hero-title--extra-long,main .practice-hero h1.hero-title--extra-long{font-size:clamp(29px,2.85vw,45px)}
+/* Desktop hero invariant: copy begins beyond the angled overlay's deepest
+   left edge. This covers every non-article landing hero, including the
+   specialised service and practice templates. */
+@media(min-width:901px){
+  main .hero:not(.article-landing-hero) .hero-copy-set{left:45.5vw;width:min(45vw,650px);max-width:calc(54.5vw - 36px);min-width:0}
+  main .hero:not(.article-landing-hero) .hero-copy-set h1{max-width:100%;text-wrap:balance}
+}
+main .capability-overview{padding-top:clamp(76px,9vw,138px);padding-bottom:clamp(72px,8vw,125px)}
+main .capability-overview>header{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(0,1.12fr);gap:clamp(32px,7vw,110px);padding-bottom:clamp(48px,5vw,74px);border-bottom:1px solid #d8d9cd}
+main .capability-overview>header .eyebrow{grid-column:1/-1;margin:0}
+main .capability-overview>header h2{margin:0;color:#292a1c;font:400 clamp(35px,4vw,61px)/1.12 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .capability-overview>header>p:not(.eyebrow){align-self:end;max-width:540px;margin:0;color:#5e6055;font-size:16px;line-height:1.82}
+main .capability-reading-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);gap:clamp(40px,10vw,160px);padding-top:clamp(48px,6vw,88px)}
+main .capability-reading-copy>p:not(.eyebrow){max-width:690px;margin:0;color:#5a5c51;font-size:15px;line-height:1.9}
+main .capability-reading-copy>p+p{margin-top:18px}
+main .capability-scope{padding:3px 0 28px;border-top:1px solid #d5d7ca;border-bottom:1px solid #d5d7ca}
+main .capability-scope .eyebrow{margin:20px 0 17px}
+main .capability-scope ul{display:grid;gap:13px;margin:0;padding:0;list-style:none}
+main .capability-scope li,main .capability-prepare li{display:flex;gap:10px;align-items:flex-start;color:#505249;font-size:13px;line-height:1.55}
+main .capability-scope li svg,main .capability-prepare li svg{flex:0 0 auto;margin-top:2px;color:#8e8c60}
+main .capability-scope .text-link{margin-top:27px;font-size:9px}
+main .capability-process{padding:clamp(75px,8vw,128px) 0;background:#f1f3ed}
+main .capability-process-heading{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,8vw,130px);align-items:end;margin-bottom:clamp(38px,5vw,67px)}
+main .capability-process-heading .eyebrow{grid-column:1/-1;margin:0}
+main .capability-process-heading h2{margin:0;color:#292a1c;font:400 clamp(34px,3.8vw,58px)/1.16 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .capability-process-heading h2 em,main .capability-prepare h2 em{color:#8e8c60}
+main .capability-process-heading>p:not(.eyebrow){max-width:475px;margin:0 0 4px;color:#5d5f54;font-size:14px;line-height:1.82}
+main .capability-steps{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #d4d6c7;border-left:1px solid #d4d6c7}
+main .capability-steps article{display:flex;min-height:190px;flex-direction:column;justify-content:space-between;padding:27px 25px;border-right:1px solid #d4d6c7;border-bottom:1px solid #d4d6c7;background:#f8f9f5}
+main .capability-steps span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.15em}
+main .capability-steps h3{max-width:210px;margin:22px 0 0;color:#292a1c;font:400 20px/1.3 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
+main .capability-prepare{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(44px,11vw,185px);padding-top:clamp(75px,8vw,125px);padding-bottom:clamp(75px,8vw,125px)}
+main .capability-prepare h2{margin:0;color:#292a1c;font:400 clamp(34px,3.7vw,56px)/1.18 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .capability-prepare>div:last-child>p{max-width:570px;margin:3px 0 27px;color:#5d5f54;font-size:14px;line-height:1.82}
+main .capability-prepare ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px;margin:0;padding:25px 0;border-top:1px solid #d5d7ca;border-bottom:1px solid #d5d7ca;list-style:none}
+@media(max-width:900px){
+  main .service-detail-hero .service-detail-hero-copy,main .practice-hero .practice-hero-copy{left:10%;width:80%;max-width:none}
+  main .capability-overview>header,main .capability-reading-grid,main .capability-process-heading,main .capability-prepare{grid-template-columns:1fr;gap:28px}
+  main .capability-overview>header .eyebrow,main .capability-process-heading .eyebrow{grid-column:auto}
+  main .capability-steps{grid-template-columns:repeat(2,1fr)}
+  main .capability-steps article{min-height:155px}
+}
+@media(max-width:560px){
+  main .service-detail-hero h1,main .practice-hero h1{font-size:clamp(32px,9vw,43px)}
+  main .service-detail-hero h1.hero-title--long,main .practice-hero h1.hero-title--long{font-size:clamp(29px,7.8vw,38px)}
+  main .service-detail-hero h1.hero-title--extra-long,main .practice-hero h1.hero-title--extra-long{font-size:clamp(27px,7vw,35px)}
+  main .capability-overview>header>p:not(.eyebrow){font-size:14px}
+  main .capability-reading-copy>p:not(.eyebrow){font-size:14px;line-height:1.82}
+  main .capability-steps,main .capability-prepare ul{grid-template-columns:1fr}
+  main .capability-steps article{min-height:132px;padding:23px}
+}
+
+/* A dedicated compliance section gives every practice-area page room for the ongoing obligations that follow the first transaction or incorporation. */
+main .practice-compliance{padding:clamp(76px,8vw,126px) 0;background:#f1f3ed}
+main .practice-compliance-heading{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,8vw,130px);align-items:end;margin-bottom:clamp(40px,5vw,68px)}
+main .practice-compliance-heading .eyebrow{grid-column:1/-1;margin:0}
+main .practice-compliance-heading h2{margin:0;color:#292a1c;font:400 clamp(34px,3.8vw,58px)/1.16 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .practice-compliance-heading h2 em{color:#8e8c60}
+main .practice-compliance-heading>p:not(.eyebrow){max-width:540px;margin:0 0 4px;color:#5d5f54;font-size:14px;line-height:1.82}
+main .practice-compliance-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #d4d6c7;border-left:1px solid #d4d6c7}
+main .practice-compliance-grid article{min-height:250px;padding:29px 28px;border-right:1px solid #d4d6c7;border-bottom:1px solid #d4d6c7;background:#fafbf8}
+main .practice-compliance-grid span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.15em}
+main .practice-compliance-grid h3{margin:48px 0 13px;color:#292a1c;font:400 23px/1.25 'Libre Baskerville',Georgia,serif;letter-spacing:-.05em}
+main .practice-compliance-grid p{max-width:315px;margin:0;color:#5c5e53;font-size:13px;line-height:1.75}
+main .practice-compliance-note{max-width:740px;margin:25px 0 0;color:#75766d;font-size:11px;line-height:1.65}
+@media(max-width:900px){
+  main .practice-compliance-heading{grid-template-columns:1fr;gap:25px}
+  main .practice-compliance-heading .eyebrow{grid-column:auto}
+  main .practice-compliance-grid{grid-template-columns:1fr}
+  main .practice-compliance-grid article{min-height:0;padding:25px 23px}
+  main .practice-compliance-grid h3{margin:28px 0 10px}
+}
+@media(min-width:521px) and (max-width:900px){
+  .site-header .brand span{font-size:28px;font-weight:700;letter-spacing:-2px}
+}
 @media(max-width:520px){
   .shell{width:min(100% - 2rem,460px)}
   .site-header .topbar{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);padding:0 16px}
   .site-header .site-search-panel{width:100%;min-width:0;max-width:150px}
   .site-header .site-search-field{padding:0 10px}
   .site-header .site-search-input{font-size:9px}
-  .site-header .brand span{font-size:22px}
+  .site-header .brand span{font-size:24px;font-weight:700;letter-spacing:-2px}
   .site-header .brand small{font-size:5px}
   .menu-button{right:16px}
   .hero{height:clamp(470px,74svh,530px)}
@@ -1128,6 +1288,404 @@ img,svg{max-width:100%}
   .hero .hero-rail{bottom:17px;left:auto;right:24px;width:auto;max-width:52%;text-align:right}
 }
 
+/* Mobile and tablet landing: a compact masthead and an editorial hero card.
+   Desktop rules remain above 900px without alteration. */
+.hero-mobile-meta{display:none}
+@media(max-width:900px){
+  .site-header .site-search-panel{display:none!important}
+  .site-header .topbar{height:74px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,4vw,34px)}
+  .site-header .brand{align-items:flex-start;min-width:0}
+  .site-header .brand span{font-size:27px;font-weight:700;letter-spacing:-2.1px}
+  .site-header .brand small{margin-top:5px;font-size:5.5px;letter-spacing:.38em}
+  .site-header .menu-button{top:-57px;right:clamp(20px,4vw,34px);left:auto;display:grid;width:38px;height:38px;padding:0;border:1px solid #d5d6c9;background:#fafaf5;color:#30311d}
+  .site-header .mobile-nav{top:74px;padding:24px clamp(20px,4vw,34px) 30px;gap:19px;border-top:1px solid #e4e5da;border-bottom:1px solid #d9dacd;background:#fafaf6;box-shadow:0 18px 32px rgba(29,31,10,.12)}
+
+  main#home .hero{height:clamp(560px,77svh,680px);min-height:0;background:#252710}
+  main#home .hero-slide{inset:0;background-position:center center}
+  main#home .hero-shade::before{background:linear-gradient(180deg,rgba(22,25,8,.14) 0%,rgba(22,25,8,.18) 30%,rgba(22,25,8,.86) 67%,rgba(22,25,8,.96) 100%);clip-path:none}
+  main#home .hero-shade::after{content:'';position:absolute;inset:12px;border:1px solid rgba(239,238,217,.34);pointer-events:none}
+  main#home .hero-content{padding:0;text-shadow:none}
+  main#home .hero-copy-set{top:auto;bottom:70px;left:clamp(20px,4vw,34px);width:calc(100% - clamp(40px,8vw,68px));max-width:560px;align-items:flex-start;padding:0;text-align:left}
+  main#home .hero-copy-set .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 15px;color:#e8e4c8;font-size:8px;letter-spacing:.17em;line-height:1.4}
+  main#home .hero-copy-set .eyebrow em{font-size:14px;line-height:1.2}
+  main#home .hero-copy-set .eyebrow i{width:23px;margin:0;border-color:rgba(235,233,210,.72)}
+  main#home .hero-copy-set h1{max-width:440px;font-size:clamp(32px,6.1vw,46px);line-height:1.1;letter-spacing:-.025em;text-wrap:balance}
+  main#home .hero-actions{margin:24px 0 0!important;align-self:flex-start}
+  main#home .hero-actions .button{width:auto;min-width:220px;padding:17px 20px;font-size:9px}
+  main#home .hero-slider-controls{bottom:27px;left:clamp(20px,4vw,34px);gap:10px}
+  main#home .hero-slider-controls>button{width:25px;height:25px;border-color:rgba(255,255,255,.5);background:rgba(20,22,5,.22)}
+  main#home .hero-slider-controls>div{gap:7px}
+  main#home .hero-slider-controls>div button{width:5px;height:5px}
+  main#home .hero-rail{display:none}
+  main#home .hero-mobile-meta{position:absolute;z-index:2;top:25px;left:clamp(20px,4vw,34px);right:clamp(20px,4vw,34px);display:flex;align-items:center;justify-content:space-between;color:#f5f4e9;font-size:8px;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+  main#home .hero-mobile-meta span:last-child{color:#e0dcba}
+}
+@media(max-width:520px){
+  .site-header .topbar{padding:0 20px}
+  .site-header .brand span{font-size:26px}
+  .site-header .menu-button{top:-56px;right:20px;width:37px;height:37px}
+  main#home .hero{height:clamp(550px,77svh,625px)}
+  main#home .hero-copy-set{bottom:66px;left:20px;width:calc(100% - 40px)}
+  main#home .hero-copy-set h1{font-size:clamp(30px,8.7vw,37px);line-height:1.12}
+  main#home .hero-actions .button{width:100%;min-width:0}
+  main#home .hero-slider-controls{bottom:25px;left:20px}
+  main#home .hero-mobile-meta{top:24px;left:20px;right:20px;font-size:7px}
+}
+@media(max-width:900px) and (orientation:landscape){
+  main#home .hero{height:430px}
+  main#home .hero-copy-set{top:auto;bottom:48px}
+  main#home .hero-copy-set h1{font-size:clamp(27px,4.4vw,37px)}
+  main#home .hero-actions{margin-top:15px!important}
+  main#home .hero-actions .button{padding:13px 17px}
+  main#home .hero-slider-controls{bottom:15px}
+}
+
+/* Phone-first page heroes: photography is allowed to breathe above a readable
+   editorial panel. This deliberately replaces the desktop diagonal overlay. */
+@media(max-width:900px){
+  main .hero{height:clamp(550px,76svh,650px);min-height:0;background:#202108}
+  main .hero-slide{inset:0;background-position:center 48%}
+  main .hero-shade::before{background:linear-gradient(180deg,rgba(20,23,8,.06) 0%,rgba(20,23,8,.12) 48%,rgba(20,23,8,.4) 100%);clip-path:none;animation:none}
+  main .hero-shade::after{content:'';position:absolute;inset:12px;border:1px solid rgba(255,255,245,.38);pointer-events:none}
+  main .hero-content{padding:0;text-shadow:none}
+  main .hero-copy-set,
+  main .practice-hero .practice-hero-copy,
+  main .service-detail-hero .service-detail-hero-copy,
+  main .article-landing-hero .article-landing-copy,
+  main .article-hero .article-hero-copy,
+  main .contact-hero .contact-hero-copy,
+  main .services-hero .services-hero-copy,
+  main .testimonials-hero .testimonials-hero-copy{
+    top:auto;bottom:16px;left:16px;width:calc(100% - 32px);max-width:none;box-sizing:border-box;align-items:flex-start;padding:25px 23px 22px;background:#f8f8f3;color:#242610;text-align:left;
+  }
+  main .hero-copy-set .eyebrow{display:flex;align-items:center;gap:9px;margin:0 0 13px;color:#85835b;font-size:8px;letter-spacing:.16em;line-height:1.35}
+  main .hero-copy-set .eyebrow em{color:#4c4e32;font-size:14px;line-height:1.2}
+  main .hero-copy-set .eyebrow i{width:23px;margin:0;border-color:#aaa77b}
+  main .hero-copy-set h1,
+  main .practice-hero h1,
+  main .service-detail-hero h1,
+  main .article-landing-hero h1,
+  main .article-hero h1{max-width:100%;color:#22240f;font-size:clamp(29px,7.6vw,41px);line-height:1.1;letter-spacing:-.045em;text-wrap:balance}
+  main .hero-copy-set h1 em{color:#89845a}
+  main .hero-copy-set .about-hero-summary{max-width:none;margin:14px 0 0!important;color:#5d5f54!important;font-size:12px!important;line-height:1.62!important}
+  main .hero-actions{align-self:stretch;width:100%;margin:20px 0 0!important}
+  main .hero-actions .button{width:100%;min-width:0;padding:16px 18px;background:#252710;color:#fff}
+  main .hero-actions .button:hover{background:#74754c}
+  main .hero-rail{display:none}
+  main .hero-slider-controls{bottom:calc(100% - 43px);left:auto;right:27px;gap:8px}
+  main .hero-slider-controls>button{display:none}
+  main .hero-slider-controls>div button{border-color:#fff}
+  main#home .hero{height:clamp(570px,78svh,675px)}
+  main#home .hero-copy-set{bottom:16px;left:16px;width:calc(100% - 32px);max-width:none;padding:25px 23px 22px;background:#f8f8f3;color:#242610}
+  main#home .hero-copy-set .eyebrow{color:#85835b}
+  main#home .hero-copy-set .eyebrow em{color:#4c4e32}
+  main#home .hero-copy-set h1{max-width:100%;color:#22240f;font-size:clamp(29px,7.6vw,41px);line-height:1.1}
+  main#home .hero-actions{margin:20px 0 0!important}
+  main#home .hero-actions .button{width:100%;background:#252710;color:#fff}
+  main#home .hero-slider-controls{bottom:calc(100% - 43px);left:auto;right:27px}
+  main#home .hero-mobile-meta{top:27px;left:27px;right:auto;color:#fff;text-shadow:0 1px 7px rgba(0,0,0,.3)}
+  main#home .hero-mobile-meta span:last-child{display:none}
+}
+@media(max-width:520px){
+  main .hero{height:clamp(535px,75svh,610px)}
+  main .hero-copy-set,
+  main .practice-hero .practice-hero-copy,
+  main .service-detail-hero .service-detail-hero-copy,
+  main .article-landing-hero .article-landing-copy,
+  main .article-hero .article-hero-copy,
+  main .contact-hero .contact-hero-copy,
+  main .services-hero .services-hero-copy,
+  main .testimonials-hero .testimonials-hero-copy,
+  main#home .hero-copy-set{bottom:12px;left:12px;width:calc(100% - 24px);padding:22px 20px 20px}
+  main .hero-copy-set h1,
+  main .practice-hero h1,
+  main .service-detail-hero h1,
+  main .article-landing-hero h1,
+  main .article-hero h1,
+  main#home .hero-copy-set h1{font-size:clamp(27px,8.4vw,35px)}
+  main#home .hero{height:clamp(550px,77svh,625px)}
+  main#home .hero-mobile-meta{top:24px;left:24px}
+  main .hero-slider-controls,main#home .hero-slider-controls{right:24px;bottom:calc(100% - 41px)}
+}
+@media(max-width:900px) and (orientation:landscape){
+  main .hero,main#home .hero{height:430px}
+  main .hero-copy-set,
+  main .practice-hero .practice-hero-copy,
+  main .service-detail-hero .service-detail-hero-copy,
+  main .article-landing-hero .article-landing-copy,
+  main .article-hero .article-hero-copy,
+  main .contact-hero .contact-hero-copy,
+  main .services-hero .services-hero-copy,
+  main .testimonials-hero .testimonials-hero-copy,
+  main#home .hero-copy-set{bottom:12px;padding:18px 20px}
+  main .hero-copy-set h1,main#home .hero-copy-set h1{font-size:clamp(25px,4.6vw,34px)}
+  main .hero-actions,main#home .hero-actions{margin-top:13px!important}
+  main .hero-actions .button,main#home .hero-actions .button{padding:12px 17px}
+}
+
+/* Let mobile content arrive as one calm, legible composition. */
+@media(max-width:900px){
+  .site-header .menu-button{width:34px;height:34px;border:0;background:transparent}
+  main .hero-copy-set,
+  main .hero-copy-set .eyebrow,
+  main .hero-copy-set h1,
+  main .hero-actions{opacity:1;transform:none;animation:none!important}
+  main .hero-copy-set,
+  main#home .hero-copy-set{padding:28px 24px 24px}
+  main .hero-copy-set .eyebrow{margin-bottom:17px}
+  main .hero-copy-set h1,
+  main#home .hero-copy-set h1{font-size:clamp(28px,7.25vw,39px);line-height:1.16;letter-spacing:-.05em}
+  main .hero-actions,
+  main#home .hero-actions{margin-top:25px!important}
+  main .hero-actions .button,
+  main#home .hero-actions .button{min-height:54px}
+}
+@media(max-width:520px){
+  .site-header .menu-button{right:20px;width:34px;height:34px}
+  main .hero-copy-set,
+  main#home .hero-copy-set{padding:25px 22px 22px}
+  main .hero-copy-set .eyebrow{margin-bottom:15px}
+  main .hero-copy-set h1,
+  main#home .hero-copy-set h1{font-size:clamp(27px,7.7vw,33px);line-height:1.16}
+  main .hero-actions,
+  main#home .hero-actions{margin-top:22px!important}
+  main .hero-actions .button,
+  main#home .hero-actions .button{min-height:52px}
+}
+
+/* Mobile landing section introductions share a centred editorial rhythm. */
+@media(max-width:900px){
+  main#home .featured-services-heading,
+  main#home .section-heading,
+  main#home .section-heading.compact,
+  main#home .promise-intro{align-items:center;text-align:center}
+  main#home .featured-services-heading>div,
+  main#home .section-heading>div,
+  main#home .promise-intro{width:100%}
+  main#home .featured-services-heading>p,
+  main#home .section-heading>p{max-width:540px;margin:20px auto 0;text-align:center}
+  main#home .section-heading.compact .text-link{margin:24px auto 0}
+}
+
+/* Header without search: brand begins the reading order at every size. */
+@media(min-width:901px){
+  .site-header .topbar{grid-template-columns:auto minmax(0,1fr) auto;gap:clamp(28px,4vw,72px)}
+  .site-header .brand{justify-self:start;align-items:flex-start;min-width:0}
+  .site-header .header-actions{justify-self:end}
+}
+
+/* Long-form incorporation guidance gives each formation route room to be read, not skimmed. */
+main .incorporation-guide{padding:clamp(84px,9vw,142px) 0;background:#f7f8f3}
+main .incorporation-guide-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.78fr);gap:clamp(32px,9vw,145px);align-items:end;margin-bottom:clamp(46px,5vw,72px)}
+main .incorporation-guide-heading .eyebrow{grid-column:1/-1;margin:0}
+main .incorporation-guide-heading h2{margin:0;color:#292a1c;font:400 clamp(35px,4vw,62px)/1.15 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .incorporation-guide-heading h2 em{color:#8e8c60}
+main .incorporation-guide-heading>p:not(.eyebrow){max-width:530px;margin:0 0 5px;color:#5d5f54;font-size:14px;line-height:1.82}
+main .incorporation-guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #d5d7ca;border-left:1px solid #d5d7ca}
+main .incorporation-guide-grid article{min-height:335px;padding:clamp(28px,3.2vw,48px);border-right:1px solid #d5d7ca;border-bottom:1px solid #d5d7ca;background:#fbfcf8}
+main .incorporation-guide-grid article>span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.15em}
+main .incorporation-guide-grid h3{margin:30px 0 12px;color:#292a1c;font:400 clamp(24px,2vw,32px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.055em}
+main .incorporation-guide-grid article>p{max-width:500px;margin:0;color:#606258;font-size:13px;line-height:1.72}
+main .incorporation-guide-grid ul{display:grid;gap:9px;margin:24px 0 0;padding:20px 0 0;border-top:1px solid #dedfd5;list-style:none}
+main .incorporation-guide-grid li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:8px;color:#515349;font-size:12px;line-height:1.55}
+main .incorporation-guide-grid li svg{margin-top:2px;color:#8e8c60}
+main .incorporation-guide-note{max-width:770px;margin:27px 0 0;color:#77786f;font-size:11px;line-height:1.7}
+@media(max-width:900px){
+  main .incorporation-guide{padding:76px 0}
+  main .incorporation-guide-heading{grid-template-columns:1fr;gap:24px;margin-bottom:42px}
+  main .incorporation-guide-heading .eyebrow{grid-column:auto}
+  main .incorporation-guide-grid{grid-template-columns:1fr}
+  main .incorporation-guide-grid article{min-height:0;padding:28px 23px}
+  main .incorporation-guide-grid h3{margin:24px 0 10px}
+  main .incorporation-guide-grid ul{margin-top:20px}
+}
+
+/* Subtle service-page motion: an ambient accent keeps long-form pages alive,
+   while hover gives each decision card a clear interactive response. */
+@keyframes service-card-accent{
+  0%,72%,100%{opacity:.24;transform:scaleX(.18)}
+  82%{opacity:.9;transform:scaleX(1)}
+  91%{opacity:.45;transform:scaleX(.52)}
+}
+@keyframes service-card-sheen{
+  0%,70%{opacity:0;transform:translateX(-135%)}
+  77%{opacity:.32}
+  94%,100%{opacity:0;transform:translateX(250%)}
+}
+main.practice-area-page .practice-workflow-step,
+main .incorporation-guide-grid article,
+main .practice-compliance-grid article{position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.22,.8,.28,1),background .35s ease,box-shadow .35s ease,border-color .35s ease}
+main.practice-area-page .practice-workflow-step::before,
+main .incorporation-guide-grid article::before,
+main .practice-compliance-grid article::before{content:'';position:absolute;z-index:1;top:0;left:0;width:100%;height:2px;transform-origin:left;background:#8e8c60;animation:service-card-accent 10s ease-in-out infinite}
+main.practice-area-page .practice-workflow-step::after,
+main .incorporation-guide-grid article::after,
+main .practice-compliance-grid article::after{content:'';position:absolute;z-index:0;top:0;bottom:0;left:0;width:34%;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(158,156,105,.1),transparent);animation:service-card-sheen 12s ease-in-out infinite}
+main.practice-area-page .practice-workflow-step>* ,
+main .incorporation-guide-grid article>* ,
+main .practice-compliance-grid article>*{position:relative;z-index:2}
+main.practice-area-page .practice-workflow-step:nth-child(3)::before,
+main .incorporation-guide-grid article:nth-child(2)::before,
+main .practice-compliance-grid article:nth-child(2)::before{animation-delay:1.7s}
+main.practice-area-page .practice-workflow-step:nth-child(4)::before,
+main .incorporation-guide-grid article:nth-child(3)::before,
+main .practice-compliance-grid article:nth-child(3)::before{animation-delay:3.4s}
+main .incorporation-guide-grid article:nth-child(4)::before{animation-delay:5.1s}
+main.practice-area-page .practice-workflow-step:nth-child(3)::after,
+main .incorporation-guide-grid article:nth-child(2)::after,
+main .practice-compliance-grid article:nth-child(2)::after{animation-delay:1.7s}
+main.practice-area-page .practice-workflow-step:nth-child(4)::after,
+main .incorporation-guide-grid article:nth-child(3)::after,
+main .practice-compliance-grid article:nth-child(3)::after{animation-delay:3.4s}
+main .incorporation-guide-grid article:nth-child(4)::after{animation-delay:5.1s}
+@media(hover:hover) and (pointer:fine){
+  main.practice-area-page .practice-workflow-step:hover,
+  main .incorporation-guide-grid article:hover,
+  main .practice-compliance-grid article:hover{z-index:3;transform:translateY(-7px);border-color:#bcbd9e;background:#fff;box-shadow:0 17px 30px rgba(35,37,15,.12)}
+  main.practice-area-page .practice-workflow-step:hover::before,
+  main .incorporation-guide-grid article:hover::before,
+  main .practice-compliance-grid article:hover::before{opacity:1;animation-play-state:paused;transform:scaleX(1)}
+  main .incorporation-guide-grid article:hover h3,
+  main .practice-compliance-grid article:hover h3,
+  main.practice-area-page .practice-workflow-step:hover strong{color:#74754c}
+  main .incorporation-guide-grid article:hover li svg{transform:translateX(3px)}
+  main .incorporation-guide-grid article li svg{transition:transform .25s ease}
+}
+@media(prefers-reduced-motion:reduce){
+  main.practice-area-page .practice-workflow-step,
+  main .incorporation-guide-grid article,
+  main .practice-compliance-grid article{transition:none}
+  main.practice-area-page .practice-workflow-step::before,
+  main .incorporation-guide-grid article::before,
+  main .practice-compliance-grid article::before,
+  main.practice-area-page .practice-workflow-step::after,
+  main .incorporation-guide-grid article::after,
+  main .practice-compliance-grid article::after{animation:none}
+}
+
+/* Outlined service glyphs distinguish each card without breaking the editorial palette. */
+main.practice-area-page .service-card-marker,
+main .incorporation-guide-grid .service-card-marker,
+main .practice-compliance-grid .service-card-marker{display:flex;align-items:center;justify-content:space-between;gap:16px;color:#8e8c60}
+main.practice-area-page .service-card-marker span,
+main .incorporation-guide-grid .service-card-marker span,
+main .practice-compliance-grid .service-card-marker span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.15em}
+main.practice-area-page .service-card-marker svg,
+main .incorporation-guide-grid .service-card-marker svg,
+main .practice-compliance-grid .service-card-marker svg{box-sizing:content-box;padding:9px;border:1px solid rgba(142,140,96,.52);border-radius:50%;fill:none;transition:color .35s ease,border-color .35s ease,background .35s ease,transform .5s cubic-bezier(.22,.8,.28,1),box-shadow .35s ease}
+main .incorporation-guide-grid article>span,
+main .practice-compliance-grid article>span{display:none}
+@media(hover:hover) and (pointer:fine){
+  main.practice-area-page .practice-workflow-step:hover .service-card-marker svg,
+  main .incorporation-guide-grid article:hover .service-card-marker svg,
+  main .practice-compliance-grid article:hover .service-card-marker svg{border-color:#74754c;background:#f2f3e9;color:#5e603c;box-shadow:0 8px 18px rgba(68,70,28,.15);transform:rotate(-8deg) scale(1.12)}
+  main.practice-area-page .practice-workflow-step:nth-child(even):hover .service-card-marker svg,
+  main .incorporation-guide-grid article:nth-child(even):hover .service-card-marker svg,
+  main .practice-compliance-grid article:nth-child(even):hover .service-card-marker svg{transform:rotate(8deg) scale(1.12)}
+}
+@media(prefers-reduced-motion:reduce){
+  main.practice-area-page .service-card-marker svg,
+  main .incorporation-guide-grid .service-card-marker svg,
+  main .practice-compliance-grid .service-card-marker svg{transition:none}
+}
+
+/* Transparent client mark: retain its supplied colour and dimensional detail. */
+.client-logo-slot-rajesh{justify-self:center;width:min(100%,75px);height:41px}
+.client-logo-slot-rajesh img{display:block;width:100%;height:100%;-o-object-fit:contain;object-fit:contain;filter:none;opacity:1}
+
+/* Home commitment: a deliberately distinct, immersive statement section. */
+.commitment-section{position:relative;overflow:hidden;padding:clamp(94px,9vw,148px) 0 0;background:#1f2111;color:#f7f7ef;isolation:isolate}
+.commitment-section::before{content:'';position:absolute;z-index:0;top:clamp(-310px,-17vw,-125px);left:clamp(-310px,-14vw,-80px);width:clamp(620px,61vw,1040px);aspect-ratio:1;border:1px solid rgba(211,205,145,.22);border-radius:50%;box-shadow:0 0 0 clamp(42px,4.6vw,78px) rgba(211,205,145,.045),0 0 0 clamp(98px,10.5vw,178px) rgba(211,205,145,.03)}
+.commitment-section::after{content:'SATT•VA';position:absolute;z-index:0;right:clamp(-180px,-7vw,-65px);top:28%;color:rgba(226,222,183,.035);font:700 clamp(74px,13vw,220px)/.85 'DM Sans',Arial,sans-serif;letter-spacing:.08em;white-space:nowrap;pointer-events:none}
+.commitment-section>.shell{position:relative;z-index:1}
+.commitment-opening{position:relative;display:grid;grid-template-columns:1fr;align-items:end;padding-bottom:clamp(72px,7vw,112px)}
+.commitment-opening .eyebrow{margin:0 0 22px;color:#d4cc94}
+.commitment-opening h2{max-width:760px;margin:0;color:#f8f8ef;font:400 clamp(44px,5.2vw,82px)/1.04 'Libre Baskerville',Georgia,serif;letter-spacing:-.075em}
+.commitment-opening h2 em{color:#c7bd7f}
+.commitment-mark{position:absolute;right:clamp(4px,5vw,84px);bottom:clamp(24px,1vw,38px);display:grid;width:92px;height:92px;place-items:center;border:1px solid rgba(213,208,160,.48);border-radius:50%;color:#d4cc94}
+.commitment-mark span{font:italic 47px/1 'Libre Baskerville',Georgia,serif;letter-spacing:-.12em}
+.commitment-mark i{position:absolute;bottom:11px;font-size:8px;font-style:normal;font-weight:700;letter-spacing:.15em}
+.commitment-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3.5vw,60px);padding:clamp(37px,4vw,60px) 0 clamp(72px,7vw,108px);border-top:1px solid rgba(222,219,183,.28)}
+.commitment-principles article{position:relative;min-height:235px;padding:0 clamp(18px,2.4vw,38px) 0 0;transition:transform .35s cubic-bezier(.22,.8,.28,1)}
+.commitment-principles article+article{padding-left:clamp(18px,2.4vw,38px);border-left:1px solid rgba(222,219,183,.28)}
+.commitment-principles article>span{color:#d4cc94;font-size:10px;font-weight:700;letter-spacing:.16em}
+.commitment-rule{width:48px;height:1px;margin:33px 0 25px;background:#bdb577;transition:width .35s ease,background .35s ease}
+.commitment-principles h3{max-width:310px;margin:0;color:#f7f7ed;font:400 clamp(23px,2vw,31px)/1.18 'Libre Baskerville',Georgia,serif;letter-spacing:-.055em}
+.commitment-principles p{max-width:335px;margin:15px 0 0;color:#c8c9bc;font-size:13px;line-height:1.78}
+.commitment-principles article>i{position:absolute;right:clamp(18px,2.4vw,38px);bottom:0;color:#d4cc94;font-size:20px;font-style:normal;opacity:.72;transition:transform .35s ease,color .35s ease}
+.commitment-principles article:last-child>i{right:0}
+.commitment-closing{display:grid;grid-template-columns:minmax(180px,.8fr) minmax(0,1.2fr);gap:clamp(34px,7vw,112px);align-items:start;width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);padding:clamp(30px,3.5vw,50px) max(4.2vw,32px);border-top:1px solid #c9cbc1;background:#e6e7df;color:#252710}
+.commitment-closing .eyebrow{margin:5px 0 0;color:#74754c}
+.commitment-closing>p:last-child{max-width:700px;margin:0;color:#45473e;font-size:14px;line-height:1.8}
+@media(hover:hover) and (pointer:fine){
+  .commitment-principles article:hover{transform:translateY(-8px)}
+  .commitment-principles article:hover .commitment-rule{width:88px;background:#f0edca}
+  .commitment-principles article:hover>i{color:#fff;transform:translateX(8px)}
+}
+@media(max-width:900px){
+  .commitment-section{padding-top:76px}
+  .commitment-opening{grid-template-columns:1fr;padding-bottom:60px;text-align:center}
+  .commitment-opening h2{margin:0 auto;font-size:clamp(38px,8.4vw,58px)}
+  .commitment-mark{right:0;bottom:10px;width:68px;height:68px;opacity:.75}
+  .commitment-mark span{font-size:36px}
+  .commitment-mark i{bottom:7px;font-size:6px}
+  .commitment-principles{grid-template-columns:1fr;gap:0;padding:31px 0 58px}
+  .commitment-principles article,.commitment-principles article+article{min-height:0;padding:28px 0;border-left:0;border-bottom:1px solid rgba(222,219,183,.24)}
+  .commitment-principles article:last-child{border-bottom:0}
+  .commitment-rule{margin:20px 0 17px}
+  .commitment-principles article>i{right:0;bottom:30px}
+  .commitment-closing{display:block;width:auto;margin:0 -1.25rem;padding:30px 1.25rem;text-align:center}
+  .commitment-closing .eyebrow{margin:0 0 13px}
+  .commitment-closing>p:last-child{margin:0 auto}
+}
+@media(prefers-reduced-motion:reduce){
+  .commitment-principles article,.commitment-rule,.commitment-principles article>i{transition:none}
+}
+
+/* Restore the landing-page breathing room and keep Specialist Focus concise. */
+main#home .insights{padding-top:clamp(86px,8vw,126px)}
+main#home .sebi-section{min-height:520px}
+main#home .sebi-copy{padding-top:clamp(68px,6vw,88px);padding-bottom:clamp(68px,6vw,88px)}
+.practice-bridge{background:#f5f6f0;border-bottom:1px solid #d9dbce}.practice-bridge>.shell{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(310px,.76fr);gap:clamp(44px,9vw,142px);align-items:center;padding-top:clamp(48px,5vw,76px);padding-bottom:clamp(48px,5vw,76px)}.practice-bridge .eyebrow{margin:0 0 15px}.practice-bridge h2{max-width:650px;margin:0;color:#292a1c;font:400 clamp(28px,2.85vw,45px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}.practice-bridge h2 em{color:#85845c}.practice-bridge-copy>p{max-width:470px;margin:0;color:#5d5f54;font-size:13px;line-height:1.78}.practice-bridge-steps{display:flex;gap:0;margin-top:25px;padding-top:16px;border-top:1px solid #cccec1}.practice-bridge-steps span{flex:1;color:#777751;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.practice-bridge-steps span+span{padding-left:13px;border-left:1px solid #cccec1}
+@media(max-width:900px){
+  main#home .insights{padding-top:76px}
+  main#home .sebi-image{min-height:285px}
+  main#home .sebi-copy{padding-top:62px;padding-bottom:62px}
+  .practice-bridge>.shell{grid-template-columns:1fr;gap:24px;padding-top:48px;padding-bottom:48px}
+}
+
+/* A fuller commitment section: principles, working style and a clear next step. */
+main#home .promise{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);-moz-column-gap:clamp(48px,10vw,150px);column-gap:clamp(48px,10vw,150px);row-gap:0;padding-top:clamp(96px,9vw,142px);padding-bottom:clamp(88px,8vw,126px)}
+main#home .promise-statement{padding-top:4px}
+main#home .promise-statement .body-copy{max-width:535px;margin:0;color:#56584e;font-size:clamp(14px,1.08vw,16px);line-height:1.82}
+main#home .promise-statement .text-link{margin-top:28px}
+main#home .promise-list{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:clamp(62px,6vw,88px);border-top:1px solid #d8d9cd;border-bottom:1px solid #d8d9cd}
+main#home .promise-list article{min-height:230px;padding:30px clamp(22px,2.5vw,40px) 29px;border-right:1px solid #d8d9cd}
+main#home .promise-list article:first-child{padding-left:0}
+main#home .promise-list article:last-child{border-right:0;padding-right:0}
+main#home .promise-list article>div{display:flex;align-items:center;gap:13px;color:#8e8c60}
+main#home .promise-list span{font-size:10px;font-weight:700;letter-spacing:.14em}
+main#home .promise-list svg{color:#8e8c60}
+main#home .promise-list h3{margin:31px 0 11px;color:#292a1c;font:400 clamp(19px,1.6vw,25px)/1.24 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
+main#home .promise-list p{max-width:310px;margin:0;color:#67685e;font-size:13px;line-height:1.72}
+main#home .promise-note{grid-column:1/-1;display:grid;grid-template-columns:minmax(180px,.9fr) minmax(0,1.1fr);gap:clamp(34px,10vw,150px);padding-top:33px}
+main#home .promise-note .eyebrow{margin:4px 0 0}
+main#home .promise-note>p:last-child{max-width:650px;margin:0;color:#6a6b61;font-size:13px;line-height:1.78}
+@media(max-width:900px){
+  main#home .promise{display:block;padding-top:76px;padding-bottom:76px}
+  main#home .promise-statement{padding-top:22px;text-align:center}
+  main#home .promise-statement .body-copy{margin:0 auto}
+  main#home .promise-statement .text-link{margin:25px auto 0}
+  main#home .promise-list{grid-template-columns:1fr;margin-top:48px}
+  main#home .promise-list article,main#home .promise-list article:first-child,main#home .promise-list article:last-child{min-height:0;padding:27px 0;border-right:0;border-bottom:1px solid #d8d9cd}
+  main#home .promise-list article:last-child{border-bottom:0}
+  main#home .promise-list h3{margin:20px 0 9px}
+  main#home .promise-list p{max-width:520px}
+  main#home .promise-note{display:block;padding-top:28px;text-align:center}
+  main#home .promise-note .eyebrow{margin:0 0 14px}
+  main#home .promise-note>p:last-child{margin:0 auto}
+}
+
 /* The testimonial content uses the same centred editorial measure as the blog page. */
 main .testimonials-section.testimonials-section{display:block;width:100%;min-height:120svh;max-width:none;margin:0;padding:clamp(104px,10vw,164px) 0 clamp(86px,8vw,138px)}
 main .testimonials-content{width:min(100% - 11rem,1440px);margin:0 auto}
@@ -1149,4 +1707,316 @@ main .testimonials-closing .text-link{flex:0 0 auto}
   main .testimonials-closing{align-items:flex-start;flex-direction:column;gap:27px;margin-top:44px}
 }
 @media(max-width:520px){main .testimonials-content{width:min(100% - 2rem,460px)}}
+
+/* Home service gateways: two distinct routes, with an image used as a quiet cue
+   instead of making the page compete with a full service directory. */
+main#home .featured-services-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(22px,2.7vw,42px);border:0}
+main#home .gateway-card{position:relative;display:grid;grid-template-rows:clamp(185px,16.5vw,250px) minmax(0,1fr);min-height:570px;overflow:hidden;border:1px solid #d3d5c7;background:#f6f7f2;transition:transform .4s cubic-bezier(.22,.8,.28,1),box-shadow .4s ease,border-color .4s ease}
+main#home .gateway-card-image{position:relative;background:center/cover no-repeat;filter:grayscale(.3) sepia(.18) saturate(.72);transition:transform .75s cubic-bezier(.22,.8,.28,1),filter .4s ease}
+main#home .gateway-card-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,27,11,.02),rgba(25,27,11,.43))}
+main#home .gateway-card-body{display:flex;flex-direction:column;padding:clamp(28px,3vw,47px);background:#f4f5ef}
+main#home .gateway-card-regulatory .gateway-card-body{background:#23250d;color:#fff}
+main#home .gateway-card-meta{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#8e8c60}
+main#home .gateway-card-meta span{font-size:10px;font-weight:700;letter-spacing:.16em}
+main#home .gateway-card-meta p{margin:0;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+main#home .gateway-card-regulatory .gateway-card-meta{color:#d7cf91}
+main#home .gateway-card h3{max-width:500px;margin:clamp(30px,3vw,47px) 0 15px;color:#292a1c;font:400 clamp(29px,2.7vw,43px)/1.13 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main#home .gateway-card h3 em{color:#89885d}
+main#home .gateway-card-regulatory h3{color:#fff}
+main#home .gateway-card-regulatory h3 em{color:#d3ca89}
+main#home .gateway-card-body>p{max-width:510px;margin:0;color:#5c5e53;font-size:14px;line-height:1.78}
+main#home .gateway-card-regulatory .gateway-card-body>p{color:#deded1}
+main#home .gateway-card-links{display:flex;flex-direction:column;gap:14px;margin-top:auto;padding-top:27px;border-top:1px solid #d4d6c9}
+main#home .gateway-card-regulatory .gateway-card-links{border-color:rgba(229,226,190,.35)}
+main#home .gateway-card-links a{display:flex;align-items:center;justify-content:space-between;gap:15px;color:#292a1c;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;transition:color .25s ease}
+main#home .gateway-card-regulatory .gateway-card-links a{color:#fff}
+main#home .gateway-card-links a svg{transition:transform .25s ease}
+main#home .gateway-card-links>span{color:#77796d;font-size:10px;line-height:1.55}
+main#home .gateway-card-regulatory .gateway-card-links>span{color:#c6c7b3}
+@media(hover:hover) and (pointer:fine){
+  main#home .gateway-card:hover{z-index:1;transform:translateY(-8px);border-color:#bfc19f;box-shadow:0 19px 36px rgba(36,38,16,.15)}
+  main#home .gateway-card:hover .gateway-card-image{filter:grayscale(.12) sepia(.1) saturate(.9);transform:scale(1.055)}
+  main#home .gateway-card:hover .gateway-card-links a{color:#77764e}
+  main#home .gateway-card-regulatory:hover .gateway-card-links a{color:#e4dda4}
+  main#home .gateway-card:hover .gateway-card-links a svg{transform:translate(3px,3px)}
+}
+
+/* Dedicated company-incorporation route directory. */
+main.company-incorporation-page .company-incorporation-intro{padding:clamp(90px,10vw,155px) 0;background:#fbfcf8}
+main.company-incorporation-page .company-incorporation-intro>.shell{display:grid;grid-template-columns:minmax(560px,1.28fr) minmax(340px,.72fr);gap:clamp(44px,6vw,100px);align-items:end}
+main.company-incorporation-page .company-incorporation-intro .eyebrow{margin:0 0 20px}
+main.company-incorporation-page .company-incorporation-intro h2{margin:0;color:#292a1c;font:400 clamp(36px,3.9vw,60px)/1.13 'Libre Baskerville',Georgia,serif;letter-spacing:-.07em}
+main.company-incorporation-page .company-incorporation-intro h2>span{white-space:nowrap}
+main.company-incorporation-page .company-incorporation-intro h2 em{color:#89885d}
+main.company-incorporation-page .company-incorporation-intro>div:last-child{max-width:530px;padding-bottom:4px}
+main.company-incorporation-page .company-incorporation-intro>div:last-child p{margin:0;color:#5d5f54;font-size:14px;line-height:1.82}
+main.company-incorporation-page .company-incorporation-intro>div:last-child p+p{margin-top:18px}
+main.company-incorporation-page .company-route-directory{padding:clamp(76px,8vw,128px) 0;background:#eff0ea}
+main.company-incorporation-page .company-route-directory header{display:flex;justify-content:space-between;gap:40px;align-items:flex-end;margin-bottom:clamp(35px,4vw,58px)}
+main.company-incorporation-page .company-route-directory header .eyebrow{margin:0}
+main.company-incorporation-page .company-route-directory header>p:last-child{max-width:470px;margin:0;color:#5f6156;font-size:13px;line-height:1.78}
+main.company-incorporation-page .company-route-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.2vw,32px)}
+main.company-incorporation-page .company-route-card{display:flex;min-height:455px;flex-direction:column;overflow:hidden;border:1px solid #d0d3c4;background:#fafbf7;transition:transform .4s cubic-bezier(.22,.8,.28,1),box-shadow .4s ease,border-color .4s ease}
+main.company-incorporation-page .company-route-image{position:relative;height:175px;flex:none;background:center/cover no-repeat;filter:grayscale(.34) sepia(.18) saturate(.75);transition:transform .7s cubic-bezier(.22,.8,.28,1),filter .4s ease}
+main.company-incorporation-page .company-route-image::after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,rgba(26,28,11,.15),rgba(26,28,11,.56))}
+main.company-incorporation-page .company-route-image span{position:absolute;z-index:1;right:18px;bottom:15px;color:#f5f5eb;font-size:10px;font-weight:700;letter-spacing:.16em}
+main.company-incorporation-page .company-route-card-body{display:flex;min-height:0;flex:1;flex-direction:column;padding:27px}
+main.company-incorporation-page .company-route-card-marker{display:flex;align-items:center;justify-content:space-between;color:#85845a}
+main.company-incorporation-page .company-route-card-marker span{font-size:8px;font-weight:700;letter-spacing:.14em}
+main.company-incorporation-page .company-route-card h3{margin:28px 0 12px;color:#292a1c;font:400 clamp(22px,1.8vw,28px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.055em}
+main.company-incorporation-page .company-route-card p{margin:0;color:#62645a;font-size:12px;line-height:1.72}
+main.company-incorporation-page .company-route-card a{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:auto;padding-top:20px;border-top:1px solid #dcddd2;color:#424438;font-size:10px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;transition:color .25s ease}
+main.company-incorporation-page .company-route-card a svg{transition:transform .25s ease}
+main.company-incorporation-page .company-route-card:last-child{grid-column:2}
+main.company-incorporation-page .company-incorporation-framework{padding:clamp(82px,9vw,142px) 0;background:#24260f;color:#fff}
+main.company-incorporation-page .company-incorporation-framework>.shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.85fr);gap:clamp(45px,10vw,160px);align-items:start}
+main.company-incorporation-page .company-incorporation-framework .eyebrow{margin:0 0 19px;color:#d9d094}
+main.company-incorporation-page .company-incorporation-framework h2{max-width:700px;margin:0;color:#fff;font:400 clamp(36px,4.2vw,63px)/1.13 'Libre Baskerville',Georgia,serif;letter-spacing:-.07em}
+main.company-incorporation-page .company-incorporation-framework h2 em{color:#d2ca8a}
+main.company-incorporation-page .company-framework-list>p{max-width:510px;margin:4px 0 25px;color:#dfdfd2;font-size:14px;line-height:1.8}
+main.company-incorporation-page .company-framework-list ul{display:grid;gap:13px;margin:0 0 30px;padding:23px 0;border-top:1px solid rgba(223,222,189,.35);border-bottom:1px solid rgba(223,222,189,.35);list-style:none}
+main.company-incorporation-page .company-framework-list li{display:grid;grid-template-columns:18px minmax(0,1fr);gap:10px;color:#deded1;font-size:12px;line-height:1.6}
+main.company-incorporation-page .company-framework-list li svg{margin-top:1px;color:#d7cf90}
+@media(hover:hover) and (pointer:fine){
+  main.company-incorporation-page .company-route-card:hover{z-index:1;transform:translateY(-8px);border-color:#babe9d;box-shadow:0 18px 34px rgba(36,38,16,.14)}
+  main.company-incorporation-page .company-route-card:hover .company-route-image{filter:grayscale(.1) sepia(.1) saturate(.9);transform:scale(1.055)}
+  main.company-incorporation-page .company-route-card:hover a{color:#77764e}
+  main.company-incorporation-page .company-route-card:hover a svg{transform:translate(3px,3px)}
+}
+@media(max-width:1180px){
+  main.company-incorporation-page .company-incorporation-intro>.shell{grid-template-columns:1fr;gap:30px}
+  main.company-incorporation-page .company-incorporation-intro>div:last-child{padding-bottom:0}
+}
+@media(max-width:900px){
+  main#home .featured-services-grid{grid-template-columns:1fr}
+  main#home .gateway-card{grid-template-rows:205px minmax(0,1fr);min-height:0}
+  main#home .gateway-card-body{min-height:365px}
+  main.company-incorporation-page .company-incorporation-framework>.shell{grid-template-columns:1fr;gap:30px}
+  main.company-incorporation-page .company-route-directory header{display:block;margin-bottom:35px}
+  main.company-incorporation-page .company-route-directory header>p:last-child{margin-top:17px}
+  main.company-incorporation-page .company-route-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  main.company-incorporation-page .company-route-card:last-child{grid-column:auto}
+}
+@media(max-width:560px){
+  main#home .gateway-card{grid-template-rows:185px minmax(0,1fr)}
+  main#home .gateway-card-body{min-height:350px;padding:27px 23px}
+  main#home .gateway-card h3{margin-top:27px;font-size:clamp(28px,8vw,39px)}
+  main#home .gateway-card-links{padding-top:21px}
+  main.company-incorporation-page .company-incorporation-intro{padding:76px 0}
+  main.company-incorporation-page .company-incorporation-intro h2,main.company-incorporation-page .company-incorporation-framework h2{font-size:clamp(34px,9vw,47px)}
+  main.company-incorporation-page .company-incorporation-intro h2>span{white-space:normal}
+  main.company-incorporation-page .company-route-directory{padding:70px 0}
+  main.company-incorporation-page .company-route-grid{grid-template-columns:1fr}
+  main.company-incorporation-page .company-route-card{min-height:0}
+  main.company-incorporation-page .company-route-image{height:185px}
+  main.company-incorporation-page .company-route-card-body{min-height:260px;padding:25px 22px}
+  main.company-incorporation-page .company-incorporation-framework{padding:74px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  main#home .gateway-card,main#home .gateway-card-image,main.company-incorporation-page .company-route-card,main.company-incorporation-page .company-route-image,main.company-incorporation-page .company-route-card a svg{transition:none}
+}
+
+/* Keep the detailed incorporation reading stage visually separate from the
+   surrounding light service cards. */
+main.practice-area-page .incorporation-guide{position:relative;overflow:hidden;background:#202208;color:#fff}
+main.practice-area-page .incorporation-guide::before{content:'';position:absolute;right:-20vw;bottom:-28vw;width:58vw;aspect-ratio:1;border:1px solid rgba(214,207,145,.16);border-radius:50%;box-shadow:0 0 0 5vw rgba(214,207,145,.035),0 0 0 12vw rgba(214,207,145,.022);pointer-events:none}
+main.practice-area-page .incorporation-guide>.shell{position:relative;z-index:1}
+main.practice-area-page .incorporation-guide-heading h2{color:#fafaf0}
+main.practice-area-page .incorporation-guide-heading h2 em{color:#d5cc8c}
+main.practice-area-page .incorporation-guide-heading .eyebrow{color:#d9d094}
+main.practice-area-page .incorporation-guide-heading>p:not(.eyebrow){color:#d7d8cc}
+main.practice-area-page .incorporation-guide-grid{border-color:rgba(223,223,195,.3)}
+main.practice-area-page .incorporation-guide-grid article{border-color:rgba(223,223,195,.3);background:#2a2c12}
+main.practice-area-page .incorporation-guide-grid h3{color:#fffdf5}
+main.practice-area-page .incorporation-guide-grid article>p{color:#d6d7ca}
+main.practice-area-page .incorporation-guide-grid ul{border-color:rgba(223,223,195,.25)}
+main.practice-area-page .incorporation-guide-grid li{color:#e1e1d5}
+main.practice-area-page .incorporation-guide-grid li svg{color:#d7cf90}
+main.practice-area-page .incorporation-guide-grid .service-card-marker{color:#d8d094}
+main.practice-area-page .incorporation-guide-grid .service-card-marker span{color:#d8d094}
+main.practice-area-page .incorporation-guide-grid .service-card-marker svg{border-color:rgba(216,208,148,.62);color:#e1d89d}
+main.practice-area-page .incorporation-guide-note{color:#bebfae}
+@media(hover:hover) and (pointer:fine){
+  main.practice-area-page .incorporation-guide-grid article:hover{border-color:rgba(225,216,150,.78);background:#353817;box-shadow:0 20px 36px rgba(0,0,0,.27)}
+  main.practice-area-page .incorporation-guide-grid article:hover h3{color:#fff}
+  main.practice-area-page .incorporation-guide-grid article:hover .service-card-marker svg{border-color:#e2d99b;background:#3d401d;color:#f6efb9;box-shadow:0 8px 18px rgba(0,0,0,.24)}
+}
+@media(max-width:900px){
+  main.practice-area-page .incorporation-guide::before{right:-44vw;bottom:-25vw;width:112vw}
+}
+
+/* The six practice-area cards need a two-column bridge before phone layout.
+   This prevents a three-column desktop grid from squeezing copy and controls
+   during a resize between tablet and wide-desktop widths. */
+@media(min-width:901px) and (max-width:1280px){
+  main#home .service-section .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  main#home .service-section .service-card{min-height:470px;border-right:1px solid #d4d7c9;border-bottom:1px solid #d4d7c9}
+  main#home .service-section .service-card:nth-child(2n){border-right:0}
+  main#home .service-section .service-card:nth-child(n + 5){border-bottom:0}
+}
+
+/* Page-ending CTAs use a light surround and an inset sage strip, so the final
+   action remains distinct from the image-led dark footer on every route. */
+main .practice-cta,
+main .services-cta,
+main .testimonials-cta,
+main .blog-updates,
+main .about-practice-focus,
+main .article-page-cta,
+main.company-incorporation-page .company-incorporation-framework{padding:clamp(62px,7.5vw,112px) 0;background:#fff;color:#fff;text-align:center}
+main .practice-cta>.shell,
+main .services-cta>.shell,
+main .testimonials-cta>.shell,
+main .blog-updates>.shell,
+main .about-practice-focus>.shell,
+main .article-page-cta>.shell,
+main.company-incorporation-page .company-incorporation-framework>.shell{padding:clamp(46px,5.5vw,82px) clamp(24px,7vw,124px);background:#8e8c60}
+main .practice-cta .eyebrow,
+main .services-cta .eyebrow,
+main .testimonials-cta .eyebrow,
+main .blog-updates .eyebrow,
+main .about-practice-focus .eyebrow,
+main .article-page-cta .eyebrow,
+main.company-incorporation-page .company-incorporation-framework .eyebrow{color:#f7f2ca}
+main .practice-cta h2,
+main .services-cta h2,
+main .testimonials-cta h2,
+main .blog-updates h2,
+main .about-practice-focus h2,
+main .article-page-cta h2,
+main.company-incorporation-page .company-incorporation-framework h2{color:#fff}
+main .practice-cta h2 em,
+main .services-cta h2 em,
+main .testimonials-cta h2 em,
+main .blog-updates h2 em,
+main .about-practice-focus h2 em,
+main .article-page-cta h2 em,
+main.company-incorporation-page .company-incorporation-framework h2 em{color:#f2edc2}
+main .practice-cta>.shell>p:not(.eyebrow),
+main .services-cta>.shell>p:not(.eyebrow),
+main .testimonials-cta>.shell>p:not(.eyebrow),
+main .blog-updates>.shell>p:not(.eyebrow),
+main .article-page-cta>.shell>p:not(.eyebrow){color:#fff}
+main .about-practice-focus .practice-focus-list strong{color:#fff}
+main .about-practice-focus .practice-focus-list p{color:#f0f0e3}
+main .practice-cta .button-light,
+main .services-cta .button-light,
+main .testimonials-cta .button-light,
+main .blog-updates .button-light,
+main .about-practice-focus .button-light,
+main .article-page-cta .button-light,
+main.company-incorporation-page .company-incorporation-framework .button-light{border-color:transparent;background:#fff;color:#202108}
+main .practice-cta .button-light:hover,
+main .services-cta .button-light:hover,
+main .testimonials-cta .button-light:hover,
+main .blog-updates .button-light:hover,
+main .about-practice-focus .button-light:hover,
+main .article-page-cta .button-light:hover,
+main.company-incorporation-page .company-incorporation-framework .button-light:hover{background:#f2edc2;color:#202108}
+main .article-page-cta h2{margin:0;font:400 clamp(35px,3.8vw,57px)/1.18 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main .article-page-cta>.shell>p:not(.eyebrow){max-width:510px;margin:21px auto 29px;font-size:14px;line-height:1.78}
+@media(max-width:900px){
+  main .practice-cta,
+  main .services-cta,
+  main .testimonials-cta,
+  main .blog-updates,
+  main .about-practice-focus,
+  main .article-page-cta,
+  main.company-incorporation-page .company-incorporation-framework{padding:48px 0}
+  main .practice-cta>.shell,
+  main .services-cta>.shell,
+  main .testimonials-cta>.shell,
+  main .blog-updates>.shell,
+  main .about-practice-focus>.shell,
+  main .article-page-cta>.shell,
+  main.company-incorporation-page .company-incorporation-framework>.shell{padding:42px 24px}
+}
+
+/* Dropdown labels remain real navigation links; the adjacent chevron only
+   controls the associated menu. */
+.site-header .nav-dropdown-trigger{display:flex;align-items:center}
+.site-header .nav-dropdown-trigger>a{padding:7px 0;color:#242410;font:inherit;font-weight:800;transition:color .2s}
+.site-header .nav-dropdown-trigger>button{padding:7px 0 7px 5px}
+.site-header .nav-dropdown-trigger>a:hover,.site-header .nav-dropdown.is-open .nav-dropdown-trigger>a{color:#8e8c60}
+
+/* Outline icons give the About-page practice strip a clearer visual cue than
+   decorative serial numbers, while preserving its quiet premium character. */
+main .about-practice-focus .practice-focus-icon{display:grid;width:68px;height:68px;place-items:center;margin:0 auto 2px;border:1px solid rgba(255,255,238,.62);border-radius:50%;color:#fff;transition:transform .35s cubic-bezier(.22,.8,.28,1),background .35s ease,border-color .35s ease,box-shadow .35s ease}
+main .about-practice-focus .practice-focus-icon svg{fill:none}
+@media(hover:hover) and (pointer:fine){
+  main .about-practice-focus .practice-focus-list>div:hover .practice-focus-icon{border-color:#fff;background:rgba(255,255,245,.13);box-shadow:0 10px 20px rgba(42,43,17,.18);transform:translateY(-5px) rotate(-5deg)}
+  main .about-practice-focus .practice-focus-list>div:nth-child(even):hover .practice-focus-icon{transform:translateY(-5px) rotate(5deg)}
+}
+@media(max-width:900px){main .about-practice-focus .practice-focus-icon{width:60px;height:60px;margin-left:0}}
+@media(prefers-reduced-motion:reduce){main .about-practice-focus .practice-focus-icon{transition:none}}
+
+/* The incorporation and RA-practice introductions read from the left edge,
+   with the explanatory copy following below instead of forming a centred pair. */
+main.company-incorporation-page .company-incorporation-intro>.shell{display:block}
+main.company-incorporation-page .company-incorporation-intro>div:last-child{max-width:700px;margin-top:34px;padding-bottom:0}
+
+/* Company Incorporation leads directly from the hero into its route directory. */
+main.company-incorporation-page:not(.ra-practice-page) .company-route-directory{padding-top:clamp(90px,10vw,148px)}
+main.company-incorporation-page:not(.ra-practice-page) .company-route-heading{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.72fr);gap:clamp(30px,7vw,115px);align-items:end;margin-bottom:clamp(42px,5vw,72px)}
+main.company-incorporation-page:not(.ra-practice-page) .company-route-heading .eyebrow{grid-column:1/-1;margin:0}
+main.company-incorporation-page:not(.ra-practice-page) .company-route-heading h2{margin:0;color:#292a1c;font:400 clamp(36px,4.25vw,64px)/1.13 'Libre Baskerville',Georgia,serif;letter-spacing:-.07em}
+main.company-incorporation-page:not(.ra-practice-page) .company-route-heading h2 em{color:#89885d}
+main.company-incorporation-page:not(.ra-practice-page) .company-route-heading>p:last-child{max-width:500px;margin:0 0 5px;color:#5f6156;font-size:14px;line-height:1.82}
+@media(max-width:900px){
+  main.company-incorporation-page:not(.ra-practice-page) .company-route-heading{grid-template-columns:1fr;gap:22px;margin-bottom:42px}
+  main.company-incorporation-page:not(.ra-practice-page) .company-route-heading .eyebrow{grid-column:auto}
+  main.company-incorporation-page:not(.ra-practice-page) .company-route-heading>p:last-child{margin:0}
+}
+
+/* All service choices remain visible on tablet and phone instead of requiring a
+   horizontal scroll in the selector rail. */
+@media(max-width:900px){
+  main .services-selector-rail .line-sidebar{overflow:visible;padding:0}
+  main .services-selector-rail .line-sidebar ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px;padding:5px 0 8px}
+  main .services-selector-rail .line-sidebar li{min-width:0}
+  main .services-selector-rail .line-sidebar button{min-width:0;padding:8px 0}
+  main .services-selector-rail .line-sidebar-label{display:flex;gap:7px;white-space:normal;font-size:12px;line-height:1.35}
+}
+@media(max-width:560px){
+  main .services-selector-rail .line-sidebar ul{grid-template-columns:1fr;gap:3px}
+}
+
+/* Shared detail-page system: services and practice areas now use the same
+   image-led reading sequence, two-column cards and measured action panel. */
+main.capability-page .detail-intro,
+main.practice-area-page .detail-intro{padding-top:clamp(76px,8vw,128px);padding-bottom:clamp(76px,8vw,124px)}
+.detail-heading{display:grid;grid-template-columns:minmax(0,.92fr) minmax(280px,.78fr);gap:clamp(28px,7vw,120px);align-items:end;margin-bottom:clamp(42px,5vw,72px)}
+.detail-heading .eyebrow{grid-column:1/-1;margin:0}
+.detail-heading h2{margin:0;color:#292a1c;font:400 clamp(33px,3.65vw,56px)/1.12 'Libre Baskerville',Georgia,serif;letter-spacing:-.068em;animation:detail-heading-rise .72s cubic-bezier(.22,.8,.28,1) both}
+.detail-heading h2 em{color:#8e8c60}
+.detail-heading>p:not(.eyebrow){max-width:490px;margin:0 0 5px;color:#5c5e53;font-size:14px;line-height:1.8;animation:detail-heading-rise .72s .12s cubic-bezier(.22,.8,.28,1) both}
+.detail-intro-grid{display:grid;grid-template-columns:minmax(300px,.86fr) minmax(0,1.14fr);gap:clamp(38px,8vw,135px);align-items:center}
+.detail-intro-image{position:relative;min-height:370px;margin:0;overflow:hidden;background:#d8dacd}
+.detail-intro-image img{display:block;width:100%;height:100%;min-height:370px;-o-object-fit:cover;object-fit:cover;filter:grayscale(.26) sepia(.12) saturate(.78);transition:transform .7s cubic-bezier(.22,.8,.28,1),filter .45s ease}
+.detail-intro-image::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(29,31,9,.05),rgba(29,31,9,.38))}
+.detail-intro-image figcaption{position:absolute;z-index:1;bottom:0;left:0;right:0;padding:18px 20px;background:rgba(29,31,9,.75);color:#f5f5eb;font-size:9px;font-weight:700;letter-spacing:.12em;line-height:1.5;text-transform:uppercase}
+.detail-intro-copy{padding:clamp(8px,1.5vw,22px) 0}
+.detail-intro-copy .eyebrow{margin-bottom:22px}
+.detail-intro-copy>p:not(.eyebrow){max-width:670px;margin:0;color:#56584e;font-size:15px;line-height:1.9}
+.detail-intro-copy>p+p{margin-top:18px}
+.detail-cards{padding:clamp(76px,8vw,128px) 0;background:#f1f3ed}
+.detail-cards .detail-heading{margin-bottom:clamp(38px,4.5vw,64px)}
+.detail-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.detail-card-grid article{position:relative;display:flex;min-height:225px;flex-direction:column;justify-content:space-between;overflow:hidden;padding:28px 30px;border:1px solid #d2d5c6;background:#fafbf8;transition:transform .38s cubic-bezier(.22,.8,.28,1),background .38s ease,border-color .38s ease,box-shadow .38s ease}
+.detail-card-grid article::before{content:'';position:absolute;right:-34px;bottom:-52px;width:132px;height:132px;border:1px solid rgba(131,132,91,.2);border-radius:50%;transition:transform .45s ease,background .45s ease}
+.detail-card-top{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;color:#86855d}
+.detail-card-top>span{font-size:10px;font-weight:700;letter-spacing:.16em}
+.detail-card-top i{display:grid;width:52px;height:52px;place-items:center;border:1px solid #caccbd;border-radius:50%;font-style:normal;transition:color .32s ease,border-color .32s ease,background .32s ease,transform .35s cubic-bezier(.22,.8,.28,1)}
+.detail-card-grid h3{position:relative;z-index:1;max-width:410px;margin:30px 0 0;color:#2b2d20;font:400 clamp(21px,1.8vw,28px)/1.22 'Libre Baskerville',Georgia,serif;letter-spacing:-.052em}
+.detail-card-grid>article>svg{position:relative;z-index:1;align-self:flex-end;color:#84835b;transition:transform .3s ease,color .3s ease}
+@media(hover:hover) and (pointer:fine){.detail-intro-image:hover img{filter:grayscale(.08) sepia(.08) saturate(.92);transform:scale(1.055)}.detail-card-grid article:hover{z-index:1;border-color:#9b9a70;background:#fff;box-shadow:0 18px 35px rgba(39,41,17,.12);transform:translateY(-7px)}.detail-card-grid article:hover::before{background:rgba(154,153,105,.08);transform:scale(1.18)}.detail-card-grid article:hover .detail-card-top i{border-color:#8e8c60;background:#8e8c60;color:#fff;transform:rotate(-8deg)}.detail-card-grid article:hover>svg{color:#6f6e48;transform:translate(4px,4px)}}
+.detail-process{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.84fr);gap:clamp(42px,9vw,150px);align-items:center;padding-top:clamp(76px,8vw,126px);padding-bottom:clamp(76px,8vw,126px)}
+.detail-process-copy .eyebrow{margin:0 0 17px}.detail-process-copy h2{max-width:590px;margin:0;color:#292a1c;font:400 clamp(33px,3.65vw,56px)/1.12 'Libre Baskerville',Georgia,serif;letter-spacing:-.068em;animation:detail-heading-rise .72s cubic-bezier(.22,.8,.28,1) both}.detail-process-copy h2 em{color:#8e8c60}.detail-process-copy>p:not(.eyebrow){max-width:590px;margin:21px 0 26px;color:#5c5e53;font-size:14px;line-height:1.8}.detail-process-copy ol{display:grid;gap:0;max-width:650px;margin:0;padding:0;border-top:1px solid #d3d5c7;list-style:none}.detail-process-copy li{display:grid;grid-template-columns:42px minmax(0,1fr);gap:14px;padding:16px 0;border-bottom:1px solid #d3d5c7;color:#34362a;font:400 16px/1.48 'Libre Baskerville',Georgia,serif}.detail-process-copy li span{padding-top:3px;color:#8b8960;font:700 10px 'DM Sans',Arial,sans-serif;letter-spacing:.16em}.detail-process-image{position:relative;min-height:430px;margin:0;overflow:hidden;background:#d8dacd}.detail-process-image img{display:block;width:100%;height:100%;min-height:430px;-o-object-fit:cover;object-fit:cover;filter:grayscale(.3) sepia(.15) saturate(.78);transition:transform .7s cubic-bezier(.22,.8,.28,1),filter .45s ease}.detail-process-image::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(29,31,9,.04),rgba(29,31,9,.32))}.detail-process-image figcaption{position:absolute;z-index:1;right:0;bottom:0;left:0;padding:17px 19px;background:rgba(29,31,9,.78);color:#f6f6ed;font-size:9px;font-weight:700;letter-spacing:.13em;line-height:1.5;text-transform:uppercase}@media(hover:hover) and (pointer:fine){.detail-process-image:hover img{filter:grayscale(.08) sepia(.08) saturate(.92);transform:scale(1.055)}}
+.detail-ready{padding:clamp(70px,7vw,110px) 0;background:#252710;color:#fff}.detail-ready>.shell{display:grid;grid-template-columns:minmax(270px,.8fr) minmax(0,1.2fr);gap:clamp(42px,9vw,150px);align-items:start}.detail-ready .detail-heading{display:block;margin:0}.detail-ready .detail-heading .eyebrow{color:#d7cf91}.detail-ready .detail-heading h2{margin-top:17px;color:#fff}.detail-ready .detail-heading h2 em{color:#d7cf91}.detail-ready>div>div>p{max-width:610px;margin:3px 0 27px;color:#dcddd1;font-size:14px;line-height:1.8}.detail-ready ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px;margin:0;padding:0;border-top:1px solid rgba(225,224,195,.32);list-style:none}.detail-ready li{display:grid;grid-template-columns:28px minmax(0,1fr);gap:9px;padding:17px 0;border-bottom:1px solid rgba(225,224,195,.24);color:#f0f0e7;font-size:12px;line-height:1.6}.detail-ready li span{color:#d7cf91;font-size:9px;font-weight:700;letter-spacing:.14em}
+.detail-cta{position:relative;isolation:isolate;overflow:hidden;padding:clamp(31px,3.8vw,52px) 0;background:linear-gradient(118deg,#555733 0%,#8c8c60 38%,#b0aa79 55%,#72754b 100%);background-size:180% 180%;color:#fff;text-align:center;animation:detail-cta-field 14s ease-in-out infinite alternate}.detail-cta::before{content:'';position:absolute;z-index:-1;inset:0;opacity:.5;background:radial-gradient(circle at 15% 105%,rgba(239,234,182,.32),transparent 34%),radial-gradient(circle at 90% -15%,rgba(255,255,247,.19),transparent 32%),repeating-linear-gradient(120deg,rgba(255,255,255,.045) 0 1px,transparent 1px 17px);animation:detail-cta-light 11s linear infinite}.detail-cta::after{content:'';position:absolute;z-index:-1;top:0;left:-30%;width:28%;height:1px;background:linear-gradient(90deg,transparent,#fff8c9,transparent);box-shadow:0 0 18px rgba(255,247,191,.85);animation:detail-cta-line 7s ease-in-out infinite}.detail-cta>.shell{position:relative;width:100%;max-width:none;padding:0 clamp(25px,7vw,100px);border:0;background:transparent}.detail-cta .eyebrow{margin-bottom:13px;color:#f7f3d5}.detail-cta h2{margin:0;padding-bottom:.1em;font:400 clamp(31px,3.35vw,50px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}.detail-cta h2 span,.detail-cta h2 em{display:block;width:-moz-max-content;width:max-content;max-width:100%;margin:0 auto;padding-bottom:.08em;background:linear-gradient(105deg,#fff 0%,#fff 34%,#f6efb5 48%,#fff 61%,#fff 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal;line-height:1.1;animation:detail-cta-text-flow 6.5s linear infinite}.detail-cta h2 em{font-style:italic;animation-delay:-3.25s}.detail-cta p:not(.eyebrow){max-width:500px;margin:15px auto 21px;color:#fbfbf4;font-size:13px;line-height:1.7}.detail-cta-button{display:inline-flex;align-items:center;justify-content:center;gap:13px;padding:11px 18px;border:1px solid rgba(255,255,248,.76);background:rgba(53,55,27,.12);box-shadow:inset 0 0 0 1px rgba(255,255,247,.08);color:#fff;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;transition:background .24s ease,color .24s ease,transform .24s ease,border-color .24s ease}.detail-cta-button:hover{border-color:#fff;background:#fff;color:#4d4e31;transform:translateY(-2px)}
+@keyframes detail-heading-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes detail-cta-field{0%{background-position:0% 35%}100%{background-position:100% 65%}}@keyframes detail-cta-light{0%{transform:translate3d(-3%,0,0)}50%{transform:translate3d(3%,-2%,0)}100%{transform:translate3d(-3%,0,0)}}@keyframes detail-cta-line{0%,12%{transform:translateX(0);opacity:0}28%,72%{opacity:.85}88%,100%{transform:translateX(465%);opacity:0}}@keyframes detail-cta-text-flow{0%{background-position:110% 50%}100%{background-position:-150% 50%}}
+@media(max-width:900px){.detail-heading,.detail-intro-grid,.detail-process,.detail-ready>.shell{grid-template-columns:1fr;gap:28px}.detail-heading .eyebrow{grid-column:auto}.detail-heading{min-width:0;margin-bottom:40px}.detail-heading>p:not(.eyebrow){width:100%;max-width:100%;min-width:0;overflow-wrap:anywhere;word-break:normal;white-space:normal!important}.detail-intro-image,.detail-intro-image img,.detail-process-image,.detail-process-image img{min-height:285px}.detail-ready ul{grid-template-columns:1fr}.detail-cta{padding:30px 0}.detail-cta>.shell{margin:0 auto}.detail-card-grid article{min-height:205px}}
+@media(max-width:560px){.detail-intro-copy>p:not(.eyebrow){font-size:14px;line-height:1.82}.detail-card-grid,.detail-process-list{grid-template-columns:1fr}.detail-card-grid{gap:12px}.detail-card-grid article{min-height:182px;padding:24px 22px}.detail-card-top i{width:47px;height:47px}.detail-card-grid h3{margin-top:24px;font-size:22px}.detail-process-list article{min-height:150px;padding:23px 22px}.detail-process-list span{margin-bottom:22px}.detail-ready{padding:66px 0}.detail-ready ul{gap:0}.detail-cta>.shell{padding:40px 23px}.detail-cta-button{width:100%}}
+@media(prefers-reduced-motion:reduce){.detail-heading h2,.detail-heading>p:not(.eyebrow),.detail-cta,.detail-cta::before,.detail-cta::after,.detail-cta h2 span,.detail-cta h2 em{animation:none}.detail-intro-image img,.detail-card-grid article,.detail-card-top i,.detail-card-grid>article>svg,.detail-card-grid article::before{transition:none}}
 

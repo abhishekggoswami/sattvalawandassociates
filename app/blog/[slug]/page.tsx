@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import SiteHeader from "../../../components/SiteHeader";
 import SiteFooter from "../../../components/SiteFooter";
 import { articles, getArticle } from "../../../lib/articles";
+import { heroTitleClass } from "../../../lib/hero-title";
 
 export function generateStaticParams() {
   return articles.map(({ slug }) => ({ slug }));
@@ -24,7 +25,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
         <div className="hero-content shell">
           <div className="hero-copy-set blog-hero-copy article-landing-copy">
             <p className="eyebrow light"><em>{article.category}</em><i /> Sattva Law &amp; Associates</p>
-            <h1 id="article-title">{article.title}</h1>
+            <h1 id="article-title" className={heroTitleClass(article.title)}>{article.title}</h1>
             <div className="hero-actions"><a className="button button-light" href="#article">Read the note <ArrowDownRight size={15} /></a></div>
           </div>
         </div>
@@ -63,7 +64,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               <p className="eyebrow">Comments &amp; questions</p>
               <h2>Continue the conversation.</h2>
               <p>Have a question about this note or a related requirement? We will add a comments function here in a later phase. Until then, enquiries can be sent directly to our team.</p>
-              <a className="button button-dark" href={`mailto:hello@sattvalaw.in?subject=${encodeURIComponent(`Enquiry: ${article.title}`)}`}>Send an enquiry <ArrowDownRight size={15} /></a>
+              <a className="button button-dark" href={`mailto:sattvalawandassociates@gmail.com?subject=${encodeURIComponent(`Enquiry: ${article.title}`)}`}>Send an enquiry <ArrowDownRight size={15} /></a>
             </div>
           </section>
         </article>
@@ -80,6 +81,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <div className="article-rail-callout"><Check size={17} /><p>These notes are general information, not legal advice for a particular matter.</p></div>
         </aside>
       </section>
+
+      <section className="article-page-cta"><div className="shell"><p className="eyebrow">A PRACTICAL NEXT STEP</p><h2>Need to discuss<br /><em>your own situation?</em></h2><p>Share a short outline of the matter and we will help identify a suitable next step.</p><a className="button button-light" href="mailto:sattvalawandassociates@gmail.com">Start a conversation <ArrowDownRight size={17} /></a></div></section>
 
       <SiteFooter />
     </main>

@@ -21,7 +21,7 @@ export default function BlogPage() {
       <div className="blog-card-grid">{articles.map((article) => <article className="blog-card" key={article.title}><a className="blog-card-link" href={`/blog/${article.slug}`} aria-label={`Read ${article.title}`} /><div className="blog-card-image" style={{ backgroundImage: `url(${article.image})` }} /><p className="blog-card-meta">{article.category} <i /> {article.read}</p><h3>{article.title}</h3><a className="article-arrow" href={`/blog/${article.slug}`} aria-label={`Read ${article.title}`}><ArrowDownRight size={19} /></a></article>)}</div>
     </section>
 
-    <section className="blog-updates" id="updates"><div className="shell"><p className="eyebrow">STAY INFORMED</p><h2>Thoughtful updates,<br />when they matter.</h2><p>Occasional notes on legal and compliance work for businesses and regulated professionals.</p><a className="button button-light" href="mailto:hello@sattvalaw.com">Request updates <ArrowDownRight size={17} /></a></div></section>
+    <section className="blog-updates" id="updates"><div className="shell"><p className="eyebrow">STAY INFORMED</p><h2>Thoughtful updates,<br />when they matter.</h2><p>Occasional notes on legal and compliance work for businesses and regulated professionals.</p><a className="button button-light" href="mailto:sattvalawandassociates@gmail.com">Request updates <ArrowDownRight size={17} /></a></div></section>
 
     <SiteFooter />
   </main>;

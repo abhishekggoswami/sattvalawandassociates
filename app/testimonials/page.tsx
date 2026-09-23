@@ -46,7 +46,7 @@ export default function TestimonialsPage() {
       <div className="testimonials-closing"><div><p className="eyebrow">A THOUGHTFUL PARTNERSHIP</p><p>Every matter is different, but the standard remains the same: clear communication, careful preparation and practical support from the first question to the next decision.</p></div><a className="text-link" href="/contact">Start a conversation <span>→</span></a></div>
     </div></section>
 
-    <section className="testimonials-cta"><div className="shell"><p className="eyebrow light">START A CONVERSATION</p><h2>Let&apos;s make the<br /><em>next step clear.</em></h2><p>Tell us about the legal or compliance work in front of you. We will respond with an appropriate next step.</p><a className="button button-light" href="mailto:hello@sattvalaw.in">Get in touch <ArrowDownRight size={17} /></a></div></section>
+    <section className="testimonials-cta"><div className="shell"><p className="eyebrow light">START A CONVERSATION</p><h2>Let&apos;s make the<br /><em>next step clear.</em></h2><p>Tell us about the legal or compliance work in front of you. We will respond with an appropriate next step.</p><a className="button button-light" href="mailto:sattvalawandassociates@gmail.com">Get in touch <ArrowDownRight size={17} /></a></div></section>
 
     <SiteFooter />
   </main>;

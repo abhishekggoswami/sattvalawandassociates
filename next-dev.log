@@ -1,0 +1,672 @@
+
+> bisco-consulting-hero@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 3.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 1159ms (508 modules)
+ GET / 200 in 1435ms
+ ✓ Compiled /about in 325ms (516 modules)
+ GET /about 200 in 482ms
+ ✓ Compiled /contact in 503ms (524 modules)
+ GET /contact 200 in 597ms
+ ✓ Compiled /services in 251ms (536 modules)
+ GET /services 200 in 351ms
+ ✓ Compiled /testimonials in 373ms (550 modules)
+ GET /testimonials 200 in 510ms
+ ✓ Compiled /blog in 356ms (556 modules)
+ GET /blog 200 in 455ms
+ ✓ Compiled /practice-areas/[slug] in 254ms (575 modules)
+ GET /practice-areas/private-limited-company 200 in 932ms
+ GET /practice-areas/limited-liability-partnership 200 in 49ms
+ GET /practice-areas/one-person-company 200 in 57ms
+ GET /practice-areas/section-8-company-foreign-subsidiary 200 in 51ms
+ GET /practice-areas/corporate-commercial-law 200 in 587ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 97ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 60ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 40ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 52ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 42ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 45ms
+ ○ Compiling /services/[slug] ...
+ ✓ Compiled /services/[slug] in 913ms (578 modules)
+ GET /services/business-formation 200 in 1500ms
+ GET /services/registrations-licences 200 in 62ms
+ GET /services/annual-compliance 200 in 54ms
+ GET /services/contracts-documentation 200 in 42ms
+ GET /services/sebi-compliance 200 in 44ms
+ GET /services/audit-readiness 200 in 54ms
+ GET /services/strategic-support 200 in 55ms
+ ○ Compiling /blog/[slug] ...
+ ✓ Compiled /blog/[slug] in 572ms (583 modules)
+ GET /blog/common-inspection-violations-research-analysts 200 in 1203ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 55ms
+ GET /blog/fast-track-merger-guide 200 in 56ms
+ ✓ Compiled in 1730ms (288 modules)
+ ✓ Compiled /about in 154ms (239 modules)
+ GET /about 200 in 313ms
+ ✓ Compiled in 764ms (288 modules)
+ ✓ Compiled / in 362ms (254 modules)
+ GET / 200 in 568ms
+ GET / 200 in 72ms
+ ✓ Compiled in 433ms (528 modules)
+ GET / 200 in 145ms
+ ✓ Compiled /blog in 153ms (259 modules)
+ GET /blog 200 in 301ms
+ GET / 200 in 71ms
+ ✓ Compiled in 999ms (542 modules)
+ GET / 200 in 99ms
+ ✓ Compiled /services/[slug] in 228ms (273 modules)
+ GET /services/business-formation 200 in 494ms
+ ✓ Compiled /practice-areas/[slug] in 240ms (275 modules)
+ GET /practice-areas/section-8-company 200 in 425ms
+ GET /practice-areas/foreign-subsidiary 200 in 65ms
+ GET /practice-areas/section-8-company-foreign-subsidiary 307 in 78ms
+ GET / 200 in 60ms
+ GET /practice-areas/section-8-company 200 in 64ms
+ GET /practice-areas/foreign-subsidiary 200 in 40ms
+ GET /practice-areas/foreign-subsidiary 200 in 97ms
+ GET / 200 in 73ms
+ ✓ Compiled in 1226ms (560 modules)
+ GET / 200 in 141ms
+ ✓ Compiled in 846ms (560 modules)
+ GET / 200 in 118ms
+ ✓ Compiled in 953ms (560 modules)
+ ✓ Compiled in 505ms (560 modules)
+ GET / 200 in 114ms
+ ✓ Compiled in 518ms (546 modules)
+ ✓ Compiled /services/[slug] in 325ms (275 modules)
+ GET /services/sebi-compliance 200 in 597ms
+ GET / 200 in 76ms
+ ✓ Compiled /about in 400ms (280 modules)
+ GET /about 200 in 618ms
+ ✓ Compiled in 1324ms (568 modules)
+ ✓ Compiled in 632ms (568 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 900ms (557 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1070ms
+ GET /about 200 in 87ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 98ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 93ms
+ GET /practice-areas/research-analyst-registration 200 in 82ms
+ GET /practice-areas/investment-adviser-registration 200 in 93ms
+ GET /services/sebi-compliance 200 in 102ms
+ GET /services/audit-readiness 200 in 87ms
+ GET / 200 in 79ms
+ GET /practice-areas/research-analyst-registration 200 in 87ms
+ GET /practice-areas/investment-adviser-registration 200 in 70ms
+ GET /services/sebi-compliance 200 in 60ms
+ GET /services/audit-readiness 200 in 54ms
+ GET / 200 in 96ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 40ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 40ms
+ GET /practice-areas/private-limited-company 200 in 74ms
+ GET /practice-areas/private-limited-company 200 in 70ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 58ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 59ms
+ ✓ Compiled in 2.2s (568 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 586ms (557 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 839ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 157ms
+ GET / 200 in 90ms
+ GET / 200 in 45ms
+ GET /practice-areas/private-limited-company 200 in 87ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 49ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 44ms
+ ✓ Compiled in 966ms (568 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 563ms (557 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 809ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 54ms
+ GET /practice-areas/private-limited-company 200 in 68ms
+ GET / 200 in 77ms
+ GET /services/sebi-compliance 200 in 68ms
+ ✓ Compiled /blog/[slug] in 307ms (286 modules)
+ GET /blog/research-analyst-registration 404 in 628ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 49ms
+ GET / 200 in 74ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 61ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 37ms
+ ✓ Compiled in 941ms (568 modules)
+ ✓ Compiled /_not-found in 424ms (557 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 665ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 50ms
+ GET / 200 in 97ms
+ ✓ Compiled in 946ms (568 modules)
+ ✓ Compiled /_not-found in 433ms (557 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 652ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 30ms
+ GET / 200 in 98ms
+ GET / 200 in 66ms
+ ✓ Compiled in 3.3s (566 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 684ms (555 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 848ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 83ms
+ ✓ Compiled /blog/[slug] in 320ms (285 modules)
+ GET /blog/fast-track-merger-guide 200 in 651ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 67ms
+ GET / 200 in 84ms
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 520ms (289 modules)
+ GET /blog 200 in 809ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 89ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 79ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 123ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 156ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 61ms
+ ✓ Compiled in 2.2s (578 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 176ms
+ GET / 200 in 117ms
+ ✓ Compiled in 1488ms (555 modules)
+ ✓ Compiled /_not-found in 460ms (544 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 660ms
+ ✓ Compiled in 722ms (558 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 118ms
+ ✓ Compiled in 826ms (558 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 63ms
+ GET /practice-areas/private-limited-company 200 in 85ms
+ GET /practice-areas/limited-liability-partnership 200 in 89ms
+ GET /practice-areas/one-person-company 200 in 69ms
+ GET /practice-areas/section-8-company 200 in 51ms
+ GET /practice-areas/foreign-subsidiary 200 in 149ms
+ GET /practice-areas/private-limited-company 200 in 102ms
+ ✓ Compiled in 1322ms (555 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 826ms (544 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1255ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 69ms
+ GET /practice-areas/private-limited-company 200 in 89ms
+ GET /practice-areas/limited-liability-partnership 200 in 95ms
+ GET /practice-areas/section-8-company 200 in 78ms
+ GET /practice-areas/foreign-subsidiary 200 in 76ms
+ ○ Compiling / ...
+ ✓ Compiled / in 706ms (288 modules)
+ GET / 200 in 954ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1237ms (564 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1600ms
+ ✓ Compiled in 1233ms (575 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 750ms (562 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 962ms
+ ✓ Compiled in 867ms (576 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 89ms
+ ○ Compiling /practice-areas/[slug] ...
+ ✓ Compiled /practice-areas/[slug] in 814ms (299 modules)
+ GET /practice-areas/private-limited-company 200 in 1352ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 68ms
+ ✓ Compiled in 1850ms (573 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 593ms (562 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 837ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 59ms
+ GET / 200 in 94ms
+ ✓ Compiled in 3.3s (571 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 908ms (560 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1145ms
+ ✓ Compiled in 1032ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 157ms
+ ✓ Compiled in 745ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 94ms
+ GET / 200 in 83ms
+ ✓ Compiled in 914ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 72ms
+ GET / 200 in 94ms
+ ✓ Compiled in 2.1s (571 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 610ms (560 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 869ms
+ ✓ Compiled in 1222ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 201ms
+ ✓ Compiled in 797ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 123ms
+ GET / 200 in 106ms
+ ✓ Compiled in 3.7s (571 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 945ms (560 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1171ms
+ ✓ Compiled in 518ms (288 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 51ms
+ GET / 200 in 104ms
+ GET /blog 200 in 166ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 582ms (291 modules)
+ GET /contact 200 in 976ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 1526ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1168ms
+ GET /services 200 in 1756ms
+ ○ Compiling /testimonials ...
+ ✓ Compiled /testimonials in 1243ms (580 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1251ms
+ GET /testimonials 200 in 1523ms
+ ○ Compiling /practice-areas/[slug] ...
+ ✓ Compiled /practice-areas/[slug] in 3s (592 modules)
+ ✓ Compiled in 1ms (318 modules)
+ ✓ Compiled in 1667ms (592 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 5931ms
+ GET /about 200 in 4067ms
+ GET /practice-areas/private-limited-company 200 in 7582ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 115ms
+ GET /testimonials 200 in 67ms
+ GET /practice-areas/private-limited-company 200 in 464ms
+ ✓ Compiled in 2.4s (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 703ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 998ms
+ GET / 200 in 114ms
+ ✓ Compiled in 3.3s (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 793ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1043ms
+ ✓ Compiled in 1545ms (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1117ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1455ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 82ms
+ GET / 200 in 95ms
+ ○ Compiling /company-incorporation ...
+ ✓ Compiled /company-incorporation in 1011ms (579 modules)
+ GET /company-incorporation 200 in 1284ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 155ms
+ GET /company-incorporation 200 in 119ms
+ ✓ Compiled in 2.2s (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 772ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1088ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 89ms
+ GET / 200 in 125ms
+ GET / 200 in 83ms
+ ✓ Compiled in 1586ms (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 604ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 883ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 61ms
+ GET /practice-areas/private-limited-company 200 in 194ms
+ ✓ Compiled in 1024ms (583 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 643ms (572 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 814ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 70ms
+ GET / 200 in 83ms
+ ✓ Compiled /company-incorporation in 451ms (304 modules)
+ GET /company-incorporation 200 in 703ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 733ms (579 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 847ms
+ ✓ Compiled in 1297ms (585 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 526ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 729ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 56ms
+ ✓ Compiled in 784ms (588 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 83ms
+ GET /company-incorporation 200 in 68ms
+ GET / 200 in 349ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 161ms
+ GET / 200 in 72ms
+ GET /company-incorporation 200 in 92ms
+ GET / 200 in 72ms
+ ✓ Compiled in 2.1s (585 modules)
+ ✓ Compiled /_not-found in 460ms (574 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 674ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 45ms
+ GET / 200 in 63ms
+ ✓ Compiled /about in 467ms (305 modules)
+ GET /about 200 in 683ms
+ ✓ Compiled /contact in 351ms (310 modules)
+ GET /contact 200 in 541ms
+ ✓ Compiled /services in 268ms (317 modules)
+ GET /services 200 in 421ms
+ GET /testimonials 200 in 109ms
+ ✓ Compiled /blog in 278ms (321 modules)
+ GET /blog 200 in 382ms
+ GET /company-incorporation 200 in 138ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 78ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 109ms
+ GET /blog/fast-track-merger-guide 200 in 67ms
+ ✓ Compiled /services/[slug] in 451ms (325 modules)
+ GET /services/business-formation 200 in 601ms
+ GET /services/registrations-licences 200 in 91ms
+ GET /services/annual-compliance 200 in 97ms
+ GET /services/contracts-documentation 200 in 69ms
+ GET /services/sebi-compliance 200 in 52ms
+ GET /services/audit-readiness 200 in 105ms
+ GET /services/strategic-support 200 in 82ms
+ GET /practice-areas/private-limited-company 200 in 164ms
+ GET /practice-areas/limited-liability-partnership 200 in 109ms
+ GET /practice-areas/one-person-company 200 in 122ms
+ GET /practice-areas/section-8-company 200 in 146ms
+ GET /practice-areas/foreign-subsidiary 200 in 107ms
+ GET /practice-areas/corporate-commercial-law 200 in 113ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 68ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 87ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 122ms
+ GET /practice-areas/research-analyst-registration 200 in 56ms
+ GET /practice-areas/investment-adviser-registration 200 in 102ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 86ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 100ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 96ms
+ GET / 200 in 83ms
+ GET /about 200 in 51ms
+ GET /contact 200 in 72ms
+ GET /services 200 in 59ms
+ GET /testimonials 200 in 105ms
+ GET /blog 200 in 82ms
+ GET /company-incorporation 200 in 118ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 91ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 68ms
+ GET /blog/fast-track-merger-guide 200 in 66ms
+ GET /services/business-formation 200 in 84ms
+ GET /services/registrations-licences 200 in 87ms
+ GET /services/annual-compliance 200 in 88ms
+ GET /services/contracts-documentation 200 in 64ms
+ GET /services/sebi-compliance 200 in 78ms
+ GET /services/audit-readiness 200 in 80ms
+ GET /services/strategic-support 200 in 63ms
+ GET /practice-areas/private-limited-company 200 in 114ms
+ GET /practice-areas/limited-liability-partnership 200 in 84ms
+ GET /practice-areas/one-person-company 200 in 100ms
+ GET /practice-areas/section-8-company 200 in 91ms
+ GET /practice-areas/foreign-subsidiary 200 in 102ms
+ GET /practice-areas/corporate-commercial-law 200 in 69ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 87ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 80ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 80ms
+ GET /practice-areas/research-analyst-registration 200 in 90ms
+ GET /practice-areas/investment-adviser-registration 200 in 71ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 81ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 74ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 80ms
+ ✓ Compiled in 2.5s (571 modules)
+ ✓ Compiled in 1690ms (585 modules)
+ GET / 200 in 277ms
+ ○ Compiling /ra-practice ...
+ ✓ Compiled /ra-practice in 756ms (576 modules)
+ GET /ra-practice 200 in 1068ms
+ ✓ Compiled /services/[slug] in 394ms (308 modules)
+ GET /services/sebi-compliance 200 in 694ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 194ms
+ GET /practice-areas/investment-adviser-registration 200 in 154ms
+ GET /practice-areas/research-analyst-registration 200 in 180ms
+ GET /services/audit-readiness 200 in 410ms
+ GET /services/annual-compliance 200 in 196ms
+ GET /services/registrations-licences 200 in 102ms
+ GET / 200 in 97ms
+ GET / 200 in 97ms
+ GET / 200 in 138ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 674ms (313 modules)
+ GET /about 200 in 894ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 729ms (318 modules)
+ GET /contact 200 in 978ms
+ ✓ Compiled /services in 449ms (325 modules)
+ GET /services 200 in 607ms
+ GET /testimonials 200 in 81ms
+ ✓ Compiled /blog in 405ms (329 modules)
+ GET /blog 200 in 654ms
+ GET /company-incorporation 200 in 143ms
+ GET /ra-practice 200 in 98ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 106ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 70ms
+ GET /blog/fast-track-merger-guide 200 in 75ms
+ GET /services/business-formation 200 in 92ms
+ GET /services/registrations-licences 200 in 110ms
+ GET /services/annual-compliance 200 in 183ms
+ GET /services/contracts-documentation 200 in 136ms
+ GET /services/sebi-compliance 200 in 123ms
+ GET /services/audit-readiness 200 in 118ms
+ GET /services/strategic-support 200 in 90ms
+ GET /practice-areas/private-limited-company 200 in 155ms
+ GET /practice-areas/limited-liability-partnership 200 in 117ms
+ GET /practice-areas/one-person-company 200 in 176ms
+ GET /practice-areas/section-8-company 200 in 217ms
+ GET /practice-areas/foreign-subsidiary 200 in 168ms
+ GET /practice-areas/corporate-commercial-law 200 in 142ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 130ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 104ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 120ms
+ GET /practice-areas/research-analyst-registration 200 in 112ms
+ GET /practice-areas/investment-adviser-registration 200 in 118ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 121ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 102ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 123ms
+ GET /ra-practice 200 in 115ms
+ GET /about 200 in 153ms
+ ✓ Compiled in 2.2s (572 modules)
+ GET /about 200 in 224ms
+ ✓ Compiled / in 316ms (302 modules)
+ GET / 200 in 612ms
+ GET /company-incorporation 200 in 142ms
+ ✓ Compiled in 1075ms (581 modules)
+ GET /company-incorporation 200 in 123ms
+ GET /ra-practice 200 in 97ms
+ ✓ Compiled in 1503ms (581 modules)
+ GET /company-incorporation 200 in 130ms
+ GET /company-incorporation 200 in 280ms
+ GET /company-incorporation 200 in 233ms
+ GET / 200 in 187ms
+ GET / 200 in 90ms
+ GET / 200 in 90ms
+ GET /about 200 in 136ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 743ms (298 modules)
+ GET /contact 200 in 1251ms
+ ○ Compiling /services ...
+ ✓ Compiled /services in 599ms (305 modules)
+ GET /services 200 in 936ms
+ ○ Compiling /testimonials ...
+ ✓ Compiled /testimonials in 1361ms (313 modules)
+ GET /testimonials 200 in 1651ms
+ ✓ Compiled /blog in 451ms (318 modules)
+ GET /blog 200 in 816ms
+ GET /company-incorporation 200 in 703ms
+ GET /ra-practice 200 in 901ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 211ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 173ms
+ GET /blog/fast-track-merger-guide 200 in 150ms
+ ○ Compiling /services/[slug] ...
+ ✓ Compiled /services/[slug] in 1080ms (322 modules)
+ GET /services/business-formation 200 in 1656ms
+ GET /services/registrations-licences 200 in 155ms
+ GET /services/annual-compliance 200 in 367ms
+ GET /services/contracts-documentation 200 in 259ms
+ GET /services/sebi-compliance 200 in 153ms
+ GET /services/audit-readiness 200 in 253ms
+ GET /services/strategic-support 200 in 117ms
+ ✓ Compiled /practice-areas/[slug] in 506ms (331 modules)
+ GET /practice-areas/private-limited-company 200 in 2341ms
+ GET /practice-areas/limited-liability-partnership 200 in 408ms
+ GET /practice-areas/one-person-company 200 in 271ms
+ GET /practice-areas/section-8-company 200 in 244ms
+ GET /practice-areas/foreign-subsidiary 200 in 126ms
+ GET /practice-areas/corporate-commercial-law 200 in 124ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 108ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 118ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 125ms
+ GET /practice-areas/research-analyst-registration 200 in 122ms
+ GET /practice-areas/investment-adviser-registration 200 in 109ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 103ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 198ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 118ms
+ GET / 200 in 168ms
+ GET /about 200 in 94ms
+ GET /contact 200 in 120ms
+ GET /services 200 in 138ms
+ GET /testimonials 200 in 103ms
+ GET /blog 200 in 132ms
+ GET /company-incorporation 200 in 188ms
+ GET /ra-practice 200 in 133ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 133ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 163ms
+ GET /blog/fast-track-merger-guide 200 in 105ms
+ GET /services/business-formation 200 in 163ms
+ GET /services/registrations-licences 200 in 170ms
+ GET /services/annual-compliance 200 in 124ms
+ GET /services/contracts-documentation 200 in 104ms
+ GET /services/sebi-compliance 200 in 106ms
+ GET /services/audit-readiness 200 in 181ms
+ GET /services/strategic-support 200 in 108ms
+ GET /practice-areas/private-limited-company 200 in 221ms
+ GET /practice-areas/limited-liability-partnership 200 in 172ms
+ GET /practice-areas/one-person-company 200 in 129ms
+ GET /practice-areas/section-8-company 200 in 173ms
+ GET /practice-areas/foreign-subsidiary 200 in 145ms
+ GET /practice-areas/corporate-commercial-law 200 in 89ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 107ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 108ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 118ms
+ GET /practice-areas/research-analyst-registration 200 in 120ms
+ GET /practice-areas/investment-adviser-registration 200 in 136ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 102ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 121ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 150ms
+ GET / 200 in 408ms
+ GET /about 200 in 127ms
+ GET /contact 200 in 123ms
+ GET / 200 in 105ms
+ GET /company-incorporation 200 in 130ms
+ GET / 200 in 85ms
+ GET / 200 in 220ms
+ GET /about 200 in 90ms
+ GET /contact 200 in 100ms
+ GET /services 200 in 84ms
+ GET /testimonials 200 in 101ms
+ GET /blog 200 in 94ms
+ GET /company-incorporation 200 in 120ms
+ GET /ra-practice 200 in 150ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 221ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 126ms
+ GET /blog/fast-track-merger-guide 200 in 112ms
+ GET /services/business-formation 200 in 176ms
+ GET /services/registrations-licences 200 in 198ms
+ GET /services/annual-compliance 200 in 153ms
+ GET /services/contracts-documentation 200 in 119ms
+ GET /services/sebi-compliance 200 in 134ms
+ GET /services/audit-readiness 200 in 172ms
+ GET /services/strategic-support 200 in 151ms
+ GET /practice-areas/private-limited-company 200 in 219ms
+ GET /practice-areas/limited-liability-partnership 200 in 299ms
+ GET /practice-areas/one-person-company 200 in 262ms
+ GET /practice-areas/section-8-company 200 in 200ms
+ GET /practice-areas/foreign-subsidiary 200 in 195ms
+ GET /practice-areas/corporate-commercial-law 200 in 256ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 108ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 173ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 135ms
+ GET /practice-areas/research-analyst-registration 200 in 166ms
+ GET /practice-areas/investment-adviser-registration 200 in 135ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 133ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 167ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 149ms
+ GET / 200 in 62ms
+ GET / 200 in 171ms
+ GET /about 200 in 81ms
+ GET /contact 200 in 83ms
+ GET /services 200 in 83ms
+ GET /testimonials 200 in 70ms
+ GET /blog 200 in 87ms
+ GET /company-incorporation 200 in 121ms
+ GET /ra-practice 200 in 129ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 165ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 354ms
+ GET /blog/fast-track-merger-guide 200 in 168ms
+ GET /services/business-formation 200 in 208ms
+ GET /services/registrations-licences 200 in 127ms
+ GET /services/annual-compliance 200 in 148ms
+ GET /services/contracts-documentation 200 in 110ms
+ GET /services/sebi-compliance 200 in 135ms
+ GET /services/audit-readiness 200 in 229ms
+ GET /services/strategic-support 200 in 102ms
+ GET /practice-areas/private-limited-company 200 in 212ms
+ GET /practice-areas/limited-liability-partnership 200 in 118ms
+ GET /practice-areas/one-person-company 200 in 233ms
+ GET /practice-areas/section-8-company 200 in 135ms
+ GET /practice-areas/foreign-subsidiary 200 in 129ms
+ GET /practice-areas/corporate-commercial-law 200 in 134ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 182ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 96ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 116ms
+ GET /practice-areas/research-analyst-registration 200 in 114ms
+ GET /practice-areas/investment-adviser-registration 200 in 119ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 102ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 134ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 121ms
+ GET / 200 in 72ms
+ GET / 200 in 157ms
+ GET /about 200 in 82ms
+ GET /contact 200 in 65ms
+ GET /services 200 in 86ms
+ GET /testimonials 200 in 78ms
+ GET /blog 200 in 83ms
+ GET /company-incorporation 200 in 107ms
+ GET /ra-practice 200 in 136ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 131ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 158ms
+ GET /blog/fast-track-merger-guide 200 in 101ms
+ GET /services/business-formation 200 in 400ms
+ GET /services/registrations-licences 200 in 199ms
+ GET /services/annual-compliance 200 in 311ms
+ GET /services/contracts-documentation 200 in 275ms
+ GET /services/sebi-compliance 200 in 234ms
+ GET /services/audit-readiness 200 in 136ms
+ GET /services/strategic-support 200 in 109ms
+ GET /practice-areas/private-limited-company 200 in 233ms
+ GET /practice-areas/limited-liability-partnership 200 in 152ms
+ GET /practice-areas/one-person-company 200 in 236ms
+ GET /practice-areas/section-8-company 200 in 161ms
+ GET /practice-areas/foreign-subsidiary 200 in 164ms
+ GET /practice-areas/corporate-commercial-law 200 in 116ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 105ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 134ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 149ms
+ GET /practice-areas/research-analyst-registration 200 in 250ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 119ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 356ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 116ms
+ ✓ Compiled in 2s (619 modules)
+ GET /services 200 in 95ms
+ GET /services 200 in 175ms
+ GET /services 200 in 116ms
+ GET /practice-areas/investment-adviser-registration 200 in 55ms
+ GET /practice-areas/investment-adviser-registration 200 in 253ms
+ GET / 200 in 129ms
+ GET /about 200 in 73ms
+ GET /contact 200 in 103ms
+ GET /services 200 in 80ms
+ GET /testimonials 200 in 83ms
+ GET /blog 200 in 97ms
+ GET /company-incorporation 200 in 97ms
+ GET /ra-practice 200 in 101ms
+ GET /blog/common-inspection-violations-research-analysts 200 in 128ms
+ GET /blog/model-portfolio-reports-research-analysts 200 in 91ms
+ GET /blog/fast-track-merger-guide 200 in 120ms
+ GET /services/business-formation 200 in 119ms
+ GET /services/registrations-licences 200 in 104ms
+ GET /services/annual-compliance 200 in 148ms
+ GET /services/contracts-documentation 200 in 112ms
+ GET /services/sebi-compliance 200 in 87ms
+ GET /services/audit-readiness 200 in 104ms
+ GET /services/strategic-support 200 in 96ms
+ GET /practice-areas/private-limited-company 200 in 133ms
+ GET /practice-areas/limited-liability-partnership 200 in 125ms
+ GET /practice-areas/one-person-company 200 in 119ms
+ GET /practice-areas/section-8-company 200 in 134ms
+ GET /practice-areas/foreign-subsidiary 200 in 142ms
+ GET /practice-areas/corporate-commercial-law 200 in 86ms
+ GET /practice-areas/corporate-governance-secretarial-matters 200 in 83ms
+ GET /practice-areas/commercial-contracts-documentation 200 in 97ms
+ GET /practice-areas/sebi-regulatory-practice 200 in 88ms
+ GET /practice-areas/research-analyst-registration 200 in 92ms
+ GET /practice-areas/investment-adviser-registration 200 in 109ms
+ GET /practice-areas/investment-advisory-research-regulation 200 in 92ms
+ GET /practice-areas/fema-fcgpr-fctrs-filings 200 in 77ms
+ GET /practice-areas/startup-funding-growth-advisory 200 in 78ms

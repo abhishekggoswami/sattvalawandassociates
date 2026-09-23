@@ -24,7 +24,7 @@ export type Article = {
 export const articles: Article[] = [
   {
     slug: "common-inspection-violations-research-analysts",
-    image: "/images/sattva/articles/research-analyst.jpg",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=85",
     category: "RESEARCH ANALYSTS",
     read: "10 MIN READ",
     title: "Common inspection violations for research analysts: what to look out for",
@@ -103,7 +103,7 @@ export const articles: Article[] = [
   },
   {
     slug: "model-portfolio-reports-research-analysts",
-    image: "/images/sattva/articles/model-portfolio.jpg",
+    image: "https://images.unsplash.com/photo-1707157284454-553ef0a4ed0d?auto=format&fit=crop&w=1400&q=85",
     category: "RESEARCH ANALYSTS",
     read: "06 MIN READ",
     title: "A comprehensive guide to model portfolio reports for research analysts",
@@ -140,7 +140,7 @@ export const articles: Article[] = [
   },
   {
     slug: "fast-track-merger-guide",
-    image: "/images/sattva/articles/fast-track-merger.jpg",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=85",
     category: "CORPORATE LAW",
     read: "08 MIN READ",
     title: "Fast-track merger: a comprehensive guide",

@@ -67,7 +67,7 @@ export default function ContactPage() {
           <p className="eyebrow">Send an enquiry</p>
           <div className="contact-page-fields">
             <label>Name<input name="name" required autoComplete="name" placeholder="Your name" /></label>
-            <label>Email address<input name="email" type="email" required autoComplete="email" placeholder="you@company.com" /></label>
+            <label>Email address<input name="email" type="email" required autoComplete="email" placeholder="Enter your email address" /></label>
             <label>Phone number<input name="phone" type="tel" autoComplete="tel" placeholder="Your contact number" /></label>
             <label>Subject<input name="subject" required placeholder="What would you like to discuss?" /></label>
           </div>

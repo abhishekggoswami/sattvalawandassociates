@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, Building2, Scale, ShieldCheck } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
@@ -72,7 +72,7 @@ export default function AboutPage() {
     </section>
 
     <section className="about-practice-focus" id="focus">
-      <div className="shell"><div className="practice-focus-list"><div><strong>01</strong><p>Business law</p></div><div><strong>02</strong><p>Regulatory practice</p></div><div><strong>03</strong><p>Corporate governance</p></div></div><a className="button button-light" href="/#expertise">Explore practice areas <ArrowDownRight size={17} /></a></div>
+      <div className="shell"><div className="practice-focus-list"><div><span className="practice-focus-icon"><Scale size={31} strokeWidth={1.35} aria-hidden="true" /></span><p>Business law</p></div><div><span className="practice-focus-icon"><ShieldCheck size={31} strokeWidth={1.35} aria-hidden="true" /></span><p>Regulatory practice</p></div><div><span className="practice-focus-icon"><Building2 size={31} strokeWidth={1.35} aria-hidden="true" /></span><p>Corporate governance</p></div></div><a className="button button-light" href="/#expertise">Explore practice areas <ArrowDownRight size={17} /></a></div>
     </section>
 
     <SiteFooter />
