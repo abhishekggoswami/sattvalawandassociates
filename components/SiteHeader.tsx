@@ -55,13 +55,37 @@ export default function SiteHeader() {
     return () => document.removeEventListener("pointerdown", closeDropdown);
   }, []);
 
-  return <header className="site-header" id="top">
+  useEffect(() => {
+    if (!menuOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    const previousPaddingRight = document.body.style.paddingRight;
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+
+    document.documentElement.classList.add("mobile-menu-is-open");
+    document.body.classList.add("mobile-menu-is-open");
+    document.body.style.overflow = "hidden";
+    if (scrollbarWidth > 0) document.body.style.paddingRight = `${scrollbarWidth}px`;
+    document.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      document.documentElement.classList.remove("mobile-menu-is-open");
+      document.body.classList.remove("mobile-menu-is-open");
+      document.body.style.overflow = previousOverflow;
+      document.body.style.paddingRight = previousPaddingRight;
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [menuOpen]);
+
+  return <header className={`site-header ${menuOpen ? "is-mobile-menu-open" : ""}`} id="top">
     <div className="topbar">
       <a className="brand" href="/" aria-label="Sattva Law & Associates home"><span>Sattva</span><small>LAW &amp; ASSOCIATES</small></a>
       <div className="header-actions"><div className="header-phone-links"><a className="phone-link" href="tel:+919832350411" aria-label="Call +91 9832350411">+91 9832350411</a><a className="phone-link" href="tel:+918349997770" aria-label="Call +91 8349997770">+91 8349997770</a></div><a className="nav-cta" href="/contact">Let&apos;s talk</a></div>
     </div>
     <div className="subnav">
-      <button className="menu-button" type="button" onClick={() => setMenuOpen((current) => !current)} aria-label="Open navigation" aria-expanded={menuOpen}>{menuOpen ? <X /> : <Menu />}</button>
+      <button className="menu-button" type="button" onClick={() => setMenuOpen((current) => !current)} aria-label={menuOpen ? "Close navigation" : "Open navigation"} aria-expanded={menuOpen}>{menuOpen ? <X /> : <Menu />}</button>
       <nav className="desktop-nav" aria-label="Primary navigation">
         {standardLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
         <HeaderDropdown label="Capabilities" href="/services" items={capabilityItems} active={activeDropdown === "Capabilities"} onOpen={() => setActiveDropdown("Capabilities")} onClose={() => setActiveDropdown(null)} />

@@ -1771,3 +1771,36 @@ main#home .newsletter form>div{position:relative}main#home .newsletter input{bac
   main.company-incorporation-page .company-incorporation-framework::after,
   main.company-incorporation-page .company-incorporation-framework h2{animation:none}
 }
+
+/* Header finish: light brand gradients give the navigation presence without
+   competing with the page hero. */
+.site-header{background:linear-gradient(118deg,#fff 0%,#f8f9f4 54%,#eef0e5 100%);border-bottom:1px solid rgba(128,130,95,.14)}
+.site-header .topbar{background:linear-gradient(105deg,rgba(255,255,255,.96),rgba(242,244,237,.92) 68%,rgba(230,233,216,.94))}
+.site-header .subnav{border-top-color:rgba(132,134,99,.16);background:linear-gradient(90deg,#f8f9f5 0%,#eceee3 47%,#f5f6f0 100%)}
+.site-header .desktop-nav>a,.site-header .nav-dropdown-trigger>a{position:relative}
+.site-header .desktop-nav>a::after,.site-header .nav-dropdown-trigger>a::after{content:'';position:absolute;right:0;bottom:1px;left:0;height:1px;background:#8e8c60;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.site-header .desktop-nav>a:hover::after,.site-header .nav-dropdown.is-open .nav-dropdown-trigger>a::after{transform:scaleX(1)}
+.site-header .nav-cta{background:linear-gradient(120deg,#787a50 0%,#99956b 54%,#6f7249 100%);box-shadow:0 8px 17px rgba(60,63,31,.14);transition:transform .24s ease,box-shadow .24s ease,filter .24s ease}
+.site-header .nav-cta:hover{filter:brightness(1.05);box-shadow:0 11px 22px rgba(60,63,31,.2);transform:translateY(-2px)}
+
+@media(max-width:900px){
+  html.mobile-menu-is-open,body.mobile-menu-is-open{overflow:hidden;overscroll-behavior:none}
+  .site-header{position:sticky;top:0;z-index:110;background:linear-gradient(110deg,#fff 0%,#f5f6f0 58%,#e9ebdd 100%)}
+  .site-header .topbar{background:linear-gradient(110deg,#fff 0%,#f7f8f3 56%,#e9ecdd 100%)}
+  .site-header .subnav{background:transparent}
+  .site-header .menu-button{border:1px solid rgba(119,121,80,.28);background:linear-gradient(145deg,#fff 5%,#eff1e6 100%);box-shadow:0 7px 16px rgba(42,44,18,.1);transition:transform .24s ease,background .24s ease,box-shadow .24s ease}
+  .site-header.is-mobile-menu-open .menu-button{background:linear-gradient(145deg,#74764e,#96936a);color:#fff;box-shadow:0 8px 18px rgba(42,44,18,.18);transform:rotate(90deg)}
+  .site-header .mobile-nav{position:fixed;z-index:109;inset:74px 0 0;display:flex;min-height:0;max-height:calc(100dvh - 74px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:25px clamp(20px,5.5vw,38px) 38px;gap:0;border:0;border-top:1px solid rgba(128,130,94,.18);background:linear-gradient(135deg,#fbfcf8 0%,#f2f4eb 52%,#e7e9dc 100%);box-shadow:0 22px 36px rgba(30,32,10,.17)}
+  .site-header .mobile-nav>a,.site-header .mobile-nav-group>a:first-child{padding:15px 0;color:#292b18;font:400 17px/1.25 'Libre Baskerville',Georgia,serif;letter-spacing:-.025em}
+  .site-header .mobile-nav>a{border-bottom:1px solid rgba(135,137,103,.16)}
+  .site-header .mobile-nav-group{gap:0;padding:14px 0 16px;border-bottom:1px solid rgba(135,137,103,.18)}
+  .site-header .mobile-nav-group>a:first-child{padding:0 0 10px;color:#2b2d1b}
+  .site-header .mobile-sub-link{position:relative;padding:8px 0 8px 16px;color:#55584b;font-size:13.5px;line-height:1.45}
+  .site-header .mobile-sub-link::before{content:'';position:absolute;top:calc(50% - 1px);left:1px;width:6px;border-top:1px solid #96936a}
+  .site-header .mobile-nav>a:last-child{margin-top:17px;padding:15px 18px;border:1px solid rgba(111,114,73,.42);background:linear-gradient(120deg,#77794e,#97936a);box-shadow:0 10px 21px rgba(50,53,23,.14);color:#fff;font:700 10px/1.2 'DM Sans',Arial,sans-serif;letter-spacing:.15em;text-align:center;text-transform:uppercase}
+}
+@media(max-width:520px){
+  .site-header .mobile-nav{inset:74px 0 0;padding:22px 20px 32px}
+  .site-header .mobile-nav>a,.site-header .mobile-nav-group>a:first-child{font-size:16px}
+  .site-header .mobile-sub-link{font-size:13px}
+}
