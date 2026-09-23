@@ -89,18 +89,18 @@ export default function SiteHeader() {
       <nav className="desktop-nav" aria-label="Primary navigation">
         {standardLinks.map((link) => <a key={link.label} href={link.href}>{link.label}</a>)}
         <HeaderDropdown label="Capabilities" href="/services" items={capabilityItems} active={activeDropdown === "Capabilities"} onOpen={() => setActiveDropdown("Capabilities")} onClose={() => setActiveDropdown(null)} />
-        <HeaderDropdown label="Company incorporation" href="/company-incorporation" items={incorporationItems} active={activeDropdown === "Company incorporation"} onOpen={() => setActiveDropdown("Company incorporation")} onClose={() => setActiveDropdown(null)} />
+        <HeaderDropdown label="Company Incorporation" href="/company-incorporation" items={incorporationItems} active={activeDropdown === "Company Incorporation"} onOpen={() => setActiveDropdown("Company Incorporation")} onClose={() => setActiveDropdown(null)} />
         <HeaderDropdown label="RA Practice" href="/ra-practice" items={raPracticeItems} active={activeDropdown === "RA Practice"} onOpen={() => setActiveDropdown("RA Practice")} onClose={() => setActiveDropdown(null)} />
-        <HeaderDropdown label="Practice Areas" href="/#expertise" items={practiceItems} active={activeDropdown === "Practice Areas"} onOpen={() => setActiveDropdown("Practice Areas")} onClose={() => setActiveDropdown(null)} />
+        <HeaderDropdown label="Practice Areas" href="/practice-areas" items={practiceItems} active={activeDropdown === "Practice Areas"} onOpen={() => setActiveDropdown("Practice Areas")} onClose={() => setActiveDropdown(null)} />
         <a href="/contact">Contact</a>
       </nav>
     </div>
     {menuOpen && <nav className="mobile-nav" aria-label="Mobile navigation">
       {standardLinks.map((link) => <a href={link.href} key={link.label} onClick={() => setMenuOpen(false)}>{link.label}</a>)}
       <MobileGroup label="Capabilities" href="/services" items={capabilityItems} onNavigate={() => setMenuOpen(false)} />
-      <MobileGroup label="Company incorporation" href="/company-incorporation" items={incorporationItems} onNavigate={() => setMenuOpen(false)} />
+      <MobileGroup label="Company Incorporation" href="/company-incorporation" items={incorporationItems} onNavigate={() => setMenuOpen(false)} />
       <MobileGroup label="RA Practice" href="/ra-practice" items={raPracticeItems} onNavigate={() => setMenuOpen(false)} />
-      <MobileGroup label="Practice Areas" href="/#expertise" items={practiceItems} onNavigate={() => setMenuOpen(false)} />
+      <MobileGroup label="Practice Areas" href="/practice-areas" items={practiceItems} onNavigate={() => setMenuOpen(false)} />
       <a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a>
       <a href="/contact" onClick={() => setMenuOpen(false)}>Arrange a conversation</a>
     </nav>}

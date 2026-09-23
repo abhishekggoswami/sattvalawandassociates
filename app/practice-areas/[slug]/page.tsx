@@ -4,72 +4,74 @@ import SiteFooter from "../../../components/SiteFooter";
 import SiteHeader from "../../../components/SiteHeader";
 import { heroTitleClass } from "../../../lib/hero-title";
 
+const pexelsPhoto = (id: number) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1600`;
+
 const practiceAreas = {
   "private-limited-company": {
-    eyebrow: "Company incorporation", title: "Private limited companies", image: "/images/sattva/practice-areas/corporate-commercial-law.jpg", imageAlt: "Professionals discussing a business structure",
+    eyebrow: "Company incorporation", title: "Private limited companies", image: pexelsPhoto(36733322), imageAlt: "Professional team discussing a business strategy",
     focusTitle: "A clear start for", focusEmphasis: "a growing company.", workflow: ["Choose the shareholding and management structure", "Prepare incorporation documents and filings", "Set up the first compliance calendar"],
     lead: "Practical support to incorporate a private limited company and put its first essential compliance steps in place.",
     body: ["A private limited company can be a strong foundation for a business that is planning to build a team, bring in investors or establish a defined ownership structure. We help make the formation process easier to follow from the first decision through incorporation.", "Our support brings the key documents, filings and initial statutory actions into one clear sequence, so the company begins with its records and responsibilities in good order."],
     scope: ["Company name and structure guidance", "Incorporation documentation and filing support", "Director, shareholder and registered-office coordination", "Initial statutory records and compliance roadmap"],
   },
   "limited-liability-partnership": {
-    eyebrow: "Company incorporation", title: "Limited liability partnerships", image: "/images/sattva/practice-areas/commercial-contracts.jpg", imageAlt: "People reviewing partnership documents",
+    eyebrow: "Company incorporation", title: "Limited liability partnerships", image: pexelsPhoto(7971345), imageAlt: "Team collaborating on documents and laptops",
     focusTitle: "A practical structure", focusEmphasis: "for working together.", workflow: ["Clarify partner roles and contributions", "Prepare the LLP incorporation materials", "Put the LLP agreement and filings in order"],
     lead: "Structured support for establishing an LLP with clear partner arrangements and a dependable compliance base.",
     body: ["An LLP can offer a flexible framework for partners who want to run a business together while defining rights, duties and decision-making from the outset. We help clients work through the core setup decisions in a practical order.", "From incorporation through the LLP agreement and initial filings, we focus on creating clear documentation that supports the way the partners intend to work together."],
     scope: ["Partner and contribution structure guidance", "LLP name reservation and incorporation support", "LLP agreement preparation and filing", "Initial records and compliance roadmap"],
   },
   "one-person-company": {
-    eyebrow: "Company incorporation", title: "One person companies", image: "/images/sattva/practice-areas/startup-growth.jpg", imageAlt: "Founder working with a business plan",
+    eyebrow: "Company incorporation", title: "One person companies", image: pexelsPhoto(29284301), imageAlt: "Business team sharing ideas in a modern office",
     focusTitle: "A company structure", focusEmphasis: "for an independent founder.", workflow: ["Confirm the proposed company structure", "Prepare incorporation and nominee details", "Set out the first compliance actions"],
     lead: "Clear incorporation support for founders setting up a one person company and its essential records.",
     body: ["A one person company can give an individual founder a formal company structure while keeping the setup focused. We help identify the key incorporation inputs and organise the documents needed to proceed.", "The aim is to make the path from an initial idea to a properly established company easier to understand, with the required records and ongoing responsibilities visible from the beginning."],
     scope: ["OPC structure and nominee guidance", "Incorporation documentation and filing support", "Director and registered-office coordination", "Initial statutory records and compliance roadmap"],
   },
   "section-8-company": {
-    eyebrow: "Company incorporation", title: "Section 8 companies", image: "/images/sattva/practice-areas/corporate-governance.jpg", imageAlt: "Team gathered around a meeting table",
+    eyebrow: "Company incorporation", title: "Section 8 companies", image: pexelsPhoto(7691662), imageAlt: "Professional team reviewing documents together",
     focusTitle: "A purpose-led structure", focusEmphasis: "for not-for-profit work.", workflow: ["Clarify the charitable or social purpose", "Prepare the incorporation and licence application", "Set out the first governance and compliance actions"],
     lead: "Focused support for incorporating a Section 8 company with a clear purpose, governance structure and record-keeping foundation.",
     body: ["A Section 8 company is designed for organisations that want to pursue charitable or other not-for-profit objects through a company structure. The purpose, proposed activities and governance arrangements need to be clear from the start.", "We help bring the incorporation documents, application materials and early governance records into a practical sequence, so the organisation begins with a dependable structure for its work."],
     scope: ["Purpose and object-clause guidance", "Section 8 incorporation and licence application support", "Member, director and governance documentation", "Initial statutory records and compliance roadmap"],
   },
   "foreign-subsidiary": {
-    eyebrow: "Company incorporation", title: "Foreign subsidiaries", image: "/images/sattva/practice-areas/fema-filings.jpg", imageAlt: "International business documents and port infrastructure",
+    eyebrow: "Company incorporation", title: "Foreign subsidiaries", image: pexelsPhoto(33692749), imageAlt: "Shipping containers supporting international trade",
     focusTitle: "An Indian base for", focusEmphasis: "cross-border growth.", workflow: ["Review the proposed ownership and activity", "Prepare the incorporation and investment documents", "Plan the first company and foreign-investment actions"],
     lead: "Structured support for establishing an Indian subsidiary, with the incorporation, ownership and reporting steps considered together.",
     body: ["A foreign subsidiary needs its Indian company structure, intended activity and ownership arrangements to work together from the outset. The relevant route and documentation depend on the proposed investment and business plan.", "We coordinate the incorporation materials with the practical company-law and foreign-investment steps that follow, giving the parent company a clearer view of the records, approvals and reporting points involved."],
     scope: ["Indian subsidiary structure and incorporation guidance", "Foreign ownership and investment-document coordination", "Company-law and foreign-investment reporting support", "Initial governance and compliance roadmap"],
   },
   "corporate-commercial-law": {
-    eyebrow: "Corporate & commercial law", title: "Corporate & commercial law", image: "/images/sattva/practice-areas/corporate-commercial-law.jpg", imageAlt: "Colleagues in a business meeting",
+    eyebrow: "Corporate & commercial law", title: "Corporate & commercial law", image: pexelsPhoto(4342498), imageAlt: "Professionals discussing documents in a business meeting",
     focusTitle: "A framework for", focusEmphasis: "business decisions.", workflow: ["Clarify the business structure", "Set out the commercial terms", "Coordinate the next actions"],
     lead: "Practical legal support for the decisions, structures and commercial relationships that sit behind a growing business.",
     body: ["Businesses need legal advice that understands both the immediate decision and the wider direction of travel. We support companies through the foundational corporate work that gives everyday operations a dependable base.", "From structuring a new venture to documenting a new relationship, we help keep the legal position clear, proportionate and connected to the commercial outcome you are working towards."],
     scope: ["Business structure and incorporation support", "Commercial arrangements and governance questions", "Routine corporate documentation", "Support through change, growth and new transactions"],
   },
   "corporate-governance-secretarial-matters": {
-    eyebrow: "Corporate governance", title: "Corporate governance & secretarial matters", image: "/images/sattva/practice-areas/corporate-governance.jpg", imageAlt: "Team gathered around a meeting table",
+    eyebrow: "Corporate governance", title: "Corporate governance & secretarial matters", image: pexelsPhoto(18999158), imageAlt: "Business team meeting in a bright office",
     focusTitle: "Governance that keeps", focusEmphasis: "the work in order.", workflow: ["Map the relevant obligations", "Prepare records and resolutions", "Support the meeting cycle"],
     lead: "A dependable framework for the records, meetings and obligations that support responsible company administration.",
     body: ["Good governance is not just about meeting a deadline. It is a working record of how a company makes decisions, keeps its commitments visible and maintains confidence with its stakeholders.", "We help bring order to the recurring and event-based work behind company administration, so that records, resolutions and filings are ready when they are needed."],
     scope: ["Annual and event-based company filings", "Board and shareholder meeting support", "Statutory registers and corporate records", "Company secretarial documentation"],
   },
   "commercial-contracts-documentation": {
-    eyebrow: "Commercial contracts", title: "Commercial contracts & documentation", image: "/images/sattva/practice-areas/commercial-contracts.jpg", imageAlt: "Person signing a business document",
+    eyebrow: "Commercial contracts", title: "Commercial contracts & documentation", image: pexelsPhoto(7681077), imageAlt: "Financial documents and business graphs on a desk",
     focusTitle: "Terms that work", focusEmphasis: "in practice.", workflow: ["Understand the arrangement", "Draft and review the terms", "Support a clear execution"],
     lead: "Clear documentation that helps each party understand the terms of a working relationship from the outset.",
     body: ["An agreement should give everyone involved a clear and workable understanding of the arrangement. We begin with the commercial intent, then shape the legal terms around the way the relationship will actually operate.", "Whether the document is for a new venture, customer engagement, supplier relationship or internal appointment, we focus on precision without losing sight of the practical next step."],
     scope: ["Founder, shareholder and partnership agreements", "Vendor, customer and service agreements", "Employment and consultancy documentation", "Non-disclosure, lease and commercial arrangements"],
   },
   "sebi-regulatory-practice": {
-    eyebrow: "SEBI regulatory practice", title: "SEBI regulatory practice", image: "/images/sattva/practice-areas/sebi-regulatory.jpg", imageAlt: "Financial market data displayed on a screen",
+    eyebrow: "SEBI regulatory practice", title: "SEBI regulatory practice", image: pexelsPhoto(7172827), imageAlt: "Financial charts and planning tools on a desk",
     focusTitle: "Careful process for", focusEmphasis: "regulated work.", workflow: ["Assess the registration route", "Build the required documentation", "Prepare the compliance rhythm"],
     lead: "Focused support for regulated professionals navigating registration, operating requirements and ongoing compliance.",
     body: ["Regulated work depends on well-prepared documentation and a process that can be maintained after approval. We help clients make sense of the administrative requirements that sit alongside a research or advisory practice.", "Our role is to bring structure to the registration and readiness work, with a clear view of the records, disclosures and operating practices that need attention."],
     scope: ["Research analyst registration", "Investment adviser registration", "Compliance process and documentation setup", "Audit-readiness support for regulated practices"],
   },
   "research-analyst-registration": {
-    eyebrow: "RA / IA compliance", title: "Research analyst registration", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=85", imageAlt: "Financial analysis dashboard on a computer screen",
+    eyebrow: "RA / IA compliance", title: "Research analyst registration", image: pexelsPhoto(7172827), imageAlt: "Financial charts and planning tools on a desk",
     focusTitle: "A clear route into", focusEmphasis: "regulated research.", workflow: ["Map the proposed research activity", "Review readiness and supporting information", "Prepare the application and operating materials", "Set up the first compliance rhythm"],
     lead: "Structured support for applicants establishing a research-analyst practice, from early readiness review through registration materials and the compliance framework that follows.",
     body: ["The work begins by understanding what will be published or communicated, who will be responsible for research activity and how the practice is intended to operate. That early map helps distinguish the proposed activity and identify the records, disclosures and processes that need attention before an application is prepared.", "We then organise the application information and supporting materials into a practical workstream. The focus is on accuracy, consistency and a clear evidence trail—not on producing a generic filing pack detached from the way the business will work.", "After the registration stage, we help translate the framework into day-to-day controls around research reports, disclosures, communications, grievance handling and record retention. The precise requirements depend on the applicant and activity, so each setup is reviewed on its own facts."],
@@ -77,7 +79,7 @@ const practiceAreas = {
     engagement: { start: ["A confidential readiness discussion focused on the intended research activity, applicant structure and practical launch plan.", "A document and responsibility map showing the information, approvals and internal owners needed for the next stage."], delivery: ["A coordinated application workstream with clear drafts, supporting-document requests and review points.", "A proportionate operating pack covering the policies, disclosures, registers and review routines relevant to the proposed practice."] },
   },
   "investment-adviser-registration": {
-    eyebrow: "RA / IA compliance", title: "Investment adviser registration", image: "https://images.unsplash.com/photo-1707157284454-553ef0a4ed0d?auto=format&fit=crop&w=1600&q=85", imageAlt: "Financial reports and charts on a desk",
+    eyebrow: "RA / IA compliance", title: "Investment adviser registration", image: pexelsPhoto(36733421), imageAlt: "Professional team collaborating in a modern office",
     focusTitle: "Advice built around", focusEmphasis: "client suitability.", workflow: ["Define the proposed advisory model", "Review registration readiness and controls", "Prepare application and client-facing materials", "Establish the first compliance calendar"],
     lead: "Practical support for launching an investment-advisory practice with a considered registration approach, client-onboarding framework and ongoing compliance foundation.",
     body: ["An investment-advisory engagement starts with the proposed advisory model: who the clients will be, how advice will be delivered, what services sit alongside it and how conflicts will be identified and managed. This gives the registration work a more reliable foundation than treating the application as a stand-alone form-filling exercise.", "We help organise the relevant application inputs, entity and personnel information, policies and client-facing documents in a clear sequence. Each document is reviewed for how it will be used in the intended operating model, including the points where approvals and records need to be maintained.", "Once the practice is ready to operate, the focus shifts to a workable client journey: onboarding, risk profiling, suitability, disclosures, agreements, records and periodic review. The final setup is tailored to the applicant's actual services and current regulatory requirements."],
@@ -85,27 +87,44 @@ const practiceAreas = {
     engagement: { start: ["A focused scoping discussion that maps the target client group, advice process, delivery model and existing operating arrangements.", "A readiness checklist that separates immediate application inputs from the systems and records needed for launch."], delivery: ["A sequenced registration workstream with document reviews, clear responsibilities and practical next actions.", "A client-service and compliance foundation designed around onboarding, suitability, disclosures, records and periodic internal review."] },
   },
   "investment-advisory-research-regulation": {
-    eyebrow: "IA / RA registration", title: "Investment Adviser & Research Analyst registration", image: "/images/sattva/practice-areas/investment-advisory.jpg", imageAlt: "Professionals discussing work in an office",
+    eyebrow: "IA / RA registration", title: "Investment Adviser & Research Analyst registration", image: pexelsPhoto(7971345), imageAlt: "Team collaborating on documents and laptops",
     focusTitle: "Structure for a", focusEmphasis: "regulated practice.", workflow: ["Clarify the regulated activity", "Prepare application materials", "Set up working processes"],
     lead: "Considered support for Investment Adviser and Research Analyst registration, compliance setup and ongoing regulatory readiness.",
     body: ["The early design of an investment advisory or research practice can make ongoing compliance more manageable. We help clients identify the relevant regulatory activity and organise the materials needed to move forward with confidence.", "Alongside the application work, we focus on the practical documentation and disclosure processes that help a growing practice operate with care and consistency."],
     scope: ["IA and RA registration application preparation", "One-time compliance setup", "Documentation and disclosure support", "Ongoing regulatory-readiness guidance"],
   },
   "fema-fcgpr-fctrs-filings": {
-    eyebrow: "FEMA reporting", title: "FEMA, FCGPR & FCTRS filings", image: "/images/sattva/practice-areas/fema-filings.jpg", imageAlt: "Cargo port handling international shipments",
+    eyebrow: "FEMA reporting", title: "FEMA, FCGPR & FCTRS filings", image: pexelsPhoto(26892448), imageAlt: "International shipping port and containers",
     focusTitle: "Reporting handled", focusEmphasis: "with clarity.", workflow: ["Map the reporting event", "Coordinate supporting documents", "Submit and track the filing"],
     lead: "Structured support for foreign investment reporting and the filings that accompany cross-border corporate activity.",
     body: ["Cross-border transactions often involve several moving parts: the underlying event, supporting corporate documents, bank coordination and a reporting timeline. We help bring these inputs together in a clear sequence.", "The aim is to make the reporting process more manageable, keeping the documentation, submission and follow-up work organised around the specific transaction."],
     scope: ["FCGPR filing support", "FCTRS filing support", "Documentation coordination with AD banks", "FEMA reporting process guidance"],
   },
   "startup-funding-growth-advisory": {
-    eyebrow: "Startup, funding & growth", title: "Startup, funding & growth advisory", image: "/images/sattva/practice-areas/startup-growth.jpg", imageAlt: "Startup team collaborating around a table",
+    eyebrow: "Startup, funding & growth", title: "Startup, funding & growth advisory", image: pexelsPhoto(36733421), imageAlt: "Startup team collaborating in a modern office",
     focusTitle: "A sound base for", focusEmphasis: "the next stage.", workflow: ["Understand the stage and plan", "Prepare the core documents", "Support the next raise or step"],
     lead: "Legal support for founders navigating formation, funding conversations and the documentation that comes with growth.",
     body: ["Growth brings a new set of legal decisions into view: how the company is structured, what is agreed between founders, and how a funding conversation is documented. We help founders deal with those questions in a practical order.", "By connecting formation, governance and funding-readiness work, we give teams a more dependable base for the next raise, milestone or commercial relationship."],
     scope: ["Founder and early-stage structuring guidance", "Funding-readiness documentation", "Startup registrations and operational setup", "Company conversion and growth-stage secretarial work"],
   },
 } as const;
+
+const practiceProcessImages: Record<string, { src: string; alt: string }> = {
+  "private-limited-company": { src: pexelsPhoto(36733421), alt: "Professional business team meeting" },
+  "limited-liability-partnership": { src: pexelsPhoto(7681077), alt: "Accounting documents and graphs on a desk" },
+  "one-person-company": { src: pexelsPhoto(36733322), alt: "Group of professionals discussing business strategy" },
+  "section-8-company": { src: pexelsPhoto(7971345), alt: "Team collaborating on documents and laptops" },
+  "foreign-subsidiary": { src: pexelsPhoto(26892448), alt: "International shipping port and containers" },
+  "corporate-commercial-law": { src: pexelsPhoto(7433848), alt: "Professionals discussing documents in a business meeting" },
+  "corporate-governance-secretarial-matters": { src: pexelsPhoto(8068833), alt: "Diverse office team meeting" },
+  "commercial-contracts-documentation": { src: pexelsPhoto(7691662), alt: "Professional team reviewing documents" },
+  "sebi-regulatory-practice": { src: pexelsPhoto(9301509), alt: "Professionals reviewing information together" },
+  "research-analyst-registration": { src: pexelsPhoto(8068833), alt: "Diverse team working together in an office" },
+  "investment-adviser-registration": { src: pexelsPhoto(7163378), alt: "Business team discussing work in a modern office" },
+  "investment-advisory-research-regulation": { src: pexelsPhoto(9301509), alt: "Professionals reviewing information together" },
+  "fema-fcgpr-fctrs-filings": { src: pexelsPhoto(35395235), alt: "Shipping containers supporting international trade" },
+  "startup-funding-growth-advisory": { src: pexelsPhoto(29284301), alt: "Business team sharing ideas in an office" },
+};
 
 const complianceGuides: Record<string, { intro: string; items: { title: string; copy: string }[] }> = {
   "private-limited-company": { intro: "After incorporation, compliance is a continuing cycle of records, approvals and filings. The right actions depend on the company's activity and changes during the year.", items: [{ title: "Set the records in place", copy: "Keep statutory registers, share records, board decisions and the registered-office records current from the start." }, { title: "Run the annual cycle", copy: "Plan financial statements, the audit, annual general meeting and the related MCA filings as one connected annual process." }, { title: "Act when the company changes", copy: "Director, address, share-capital and governance changes can trigger separate filings and should be reviewed before they take effect." }] },
@@ -169,6 +188,7 @@ export default function PracticeAreaPage({ params }: { params: { slug: string } 
   if (!area) notFound();
   const complianceGuide = complianceGuides[params.slug];
   const engagement = "engagement" in area ? area.engagement : null;
+  const processImage = practiceProcessImages[params.slug];
 
   return <main className="practice-area-page">
     <SiteHeader />
@@ -180,7 +200,7 @@ export default function PracticeAreaPage({ params }: { params: { slug: string } 
     </section>
     <section className="detail-intro shell" id="scope"><header className="detail-heading"><p className="eyebrow">{area.eyebrow}</p><h2>{area.focusTitle}<br /><em>{area.focusEmphasis}</em></h2><p>{area.lead}</p></header><div className="detail-intro-grid"><figure className="detail-intro-image"><img src={area.image} alt={area.imageAlt} /><figcaption>Practical legal guidance for the work ahead.</figcaption></figure><div className="detail-intro-copy"><p className="eyebrow">THE APPROACH</p>{area.body.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></div></section>
     <section className="detail-cards"><div className="shell"><header className="detail-heading"><p className="eyebrow">IN THIS AREA</p><h2>Support built around<br /><em>the next decision.</em></h2><p>Each engagement is shaped to the facts, documents and action in front of you.</p></header><div className="detail-card-grid">{area.scope.map((item, index) => { const Icon = detailIcons[index % detailIcons.length]; return <article key={item}><div className="detail-card-top"><span>{String(index + 1).padStart(2, "0")}</span><i><Icon size={27} strokeWidth={1.35} /></i></div><h3>{item}</h3><ArrowDownRight size={19} aria-hidden="true" /></article>; })}</div></div></section>
-    <section className="detail-process shell"><div className="detail-process-copy"><p className="eyebrow">WORKING APPROACH</p><h2>A measured route,<br /><em>made clear.</em></h2><p>A considered sequence from the first question to the action that follows.</p><ol>{area.workflow.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span>{step}</li>)}</ol></div><figure className="detail-process-image"><img src={area.image} alt={area.imageAlt} /><figcaption>Clear structure for the work ahead.</figcaption></figure></section>
+    <section className="detail-process shell"><div className="detail-process-copy"><p className="eyebrow">WORKING APPROACH</p><h2>A measured route,<br /><em>made clear.</em></h2><p>A considered sequence from the first question to the action that follows.</p><ol>{area.workflow.map((step, index) => <li key={step}><span>{String(index + 1).padStart(2, "0")}</span>{step}</li>)}</ol></div><figure className="detail-process-image"><img src={processImage.src} alt={processImage.alt} /><figcaption>Clear structure for the work ahead.</figcaption></figure></section>
     <section className="detail-ready"><div className="shell"><header className="detail-heading"><p className="eyebrow">COMPLIANCE IN PRACTICE</p><h2>What follows the<br /><em>first step.</em></h2></header><div><p>{complianceGuide.intro}</p><ul>{(engagement ? [...engagement.start, ...engagement.delivery] : complianceGuide.items.map((item) => item.title)).map((item, index) => <li key={item}><span>{String(index + 1).padStart(2, "0")}</span>{item}</li>)}</ul></div></div></section>
     <section className="detail-cta"><div className="shell"><p className="eyebrow">NEXT STEP</p><h2><span>Let&apos;s discuss the</span><em>right way forward.</em></h2><p>Share a brief outline of your requirement. We will respond with an appropriate next step.</p><a className="detail-cta-button" href="mailto:sattvalawandassociates@gmail.com">Start an enquiry <ArrowDownRight size={17} /></a></div></section>
     <SiteFooter />

@@ -1,46 +1,48 @@
-"use client";
-
-import { ArrowDownRight, Check } from "lucide-react";
-import { useEffect, useState } from "react";
-import LineSidebar from "../../components/LineSidebar";
+import { ArrowDownRight, ArrowUpRight, BadgeCheck, BriefcaseBusiness, Building2, Check, FileSignature, Landmark, Scale, ShieldCheck } from "lucide-react";
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
-import { servicePages as services } from "../../lib/services";
+import { heroTitleClass } from "../../lib/hero-title";
+import { servicePages } from "../../lib/services";
 
-export default function ServicesPage() {
-  const [selected, setSelected] = useState(0);
-  useEffect(() => {
-    const selectServiceFromUrl = () => {
-      const requestedService = new URLSearchParams(window.location.search).get("service");
-      const requestedIndex = services.findIndex(({ slug }) => slug === requestedService);
-      setSelected(requestedIndex >= 0 ? requestedIndex : 0);
-    };
-    selectServiceFromUrl();
-    window.addEventListener("popstate", selectServiceFromUrl);
-    return () => window.removeEventListener("popstate", selectServiceFromUrl);
-  }, []);
-  const service = services[selected];
+const pexelsPhoto = (id: number) => `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=1600`;
 
-  return <main>
+const images = [
+  pexelsPhoto(31786661), pexelsPhoto(22643598), pexelsPhoto(7971345), pexelsPhoto(4308164),
+  pexelsPhoto(7681077), pexelsPhoto(36733421), pexelsPhoto(29284301),
+];
+const imageAlts = [
+  "Indian professionals collaborating around a laptop", "Modern office architecture", "Team collaborating on documents and laptops", "Colleagues working with papers at a table", "Financial documents and graphs on a desk", "Professional team collaborating in a modern office", "Business team sharing ideas in an office",
+];
+const icons = [Building2, Landmark, FileSignature, BadgeCheck, ShieldCheck, Scale, BriefcaseBusiness];
+const standaloneCapabilities = servicePages.filter(({ slug }) => slug === "business-formation" || slug === "contracts-documentation" || slug === "strategic-support");
+
+export default function CapabilitiesPage() {
+  return <main className="company-incorporation-page capabilities-overview-page">
     <SiteHeader />
-
-    <section className="hero services-hero">
+    <section className="hero practice-hero company-incorporation-hero">
       <div className="hero-slides" aria-hidden="true"><div className="hero-slide is-active" style={{ backgroundImage: "url('/images/sattva/services-hero.jpg')" }} /></div>
       <div className="hero-shade" />
-      <div className="hero-content shell"><div className="hero-copy-set services-hero-copy"><p className="eyebrow light"><em>Business &amp; compliance counsel</em> <i /> Sattva Law &amp; Associates</p><h1>Legal support for<br />each <em>stage</em> of business.</h1><div className="hero-actions"><a className="button button-light" href="#service-selector">Explore services <ArrowDownRight size={17} /></a></div></div></div>
-      <div className="hero-rail">BUSINESS LAW · REGULATORY PRACTICE · CORPORATE GOVERNANCE</div>
+      <div className="hero-content shell"><div className="hero-copy-set practice-hero-copy"><p className="eyebrow light"><em>Capabilities</em> <i /> Sattva Law &amp; Associates</p><h1 className={heroTitleClass("Business support that moves with you")}>Business support that moves with you</h1><div className="hero-actions"><a className="button button-light" href="#capabilities-directory">Explore capabilities <ArrowDownRight size={17} /></a></div></div></div>
+      <div className="hero-rail">BUSINESS LAW &middot; REGULATORY PRACTICE &middot; CORPORATE GOVERNANCE</div>
     </section>
 
-    <section className="services-selector shell" id="service-selector">
-      <div className="services-selector-heading"><div><p className="eyebrow">OUR SERVICES</p><h2>Choose an area.<br /><em>See what it covers.</em></h2></div><p>Select a service from the list to view its scope and start an enquiry when you are ready.</p></div>
-      <div className="services-selector-layout">
-        <aside className="services-selector-rail"><p>EXPLORE SERVICES</p><LineSidebar items={services.map(({ label }) => label)} defaultActive={selected} fontSize={0.9} itemGap={19} markerLength={48} maxShift={22} proximityRadius={110} onItemClick={(index) => setSelected(index)} /></aside>
-        <article className="service-detail" key={service.title} aria-live="polite"><div className="service-detail-top"><span>{String(selected + 1).padStart(2, "0")}</span><p>{service.intro}</p></div><h2>{service.title}</h2><p className="service-detail-copy">{service.detail}</p><ul>{service.items.map((item) => <li key={item}><Check size={16} />{item}</li>)}</ul><a className="button button-dark" href={`/services/${service.slug}`}>View service details <ArrowDownRight size={17} /></a></article>
-      </div>
-    </section>
+    <section className="company-incorporation-intro"><div className="shell">
+      <div><p className="eyebrow">PRACTICAL LEGAL SUPPORT</p><h2><span>Clarity for the</span><br /><em>work in front of you.</em></h2></div>
+      <div><p>Business formation, contracts and strategic decisions often need legal support that brings structure to the work before it becomes a filing, transaction or operational change.</p><p>Explore each capability to see how we help make the next step more organised, proportionate and easier to move forward.</p></div>
+    </div></section>
 
-    <section className="services-cta" id="service-enquiry"><div className="shell"><p className="eyebrow light">NEXT STEP</p><h2>Let&apos;s discuss what<br />your business <em>needs now.</em></h2><p>Share a brief outline of the matter. We will respond with the appropriate next step.</p><a className="button button-light" href="mailto:sattvalawandassociates@gmail.com">Start an enquiry <ArrowDownRight size={17} /></a></div></section>
+    <section className="company-route-directory" id="capabilities-directory"><div className="shell">
+      <header className="company-route-heading"><p className="eyebrow">OUR CAPABILITIES</p><h2>Support that stays<br /><em>connected to the work.</em></h2><p>Every capability leads to a focused service page, with the scope, approach and useful starting points for that piece of work.</p></header>
+      <div className="company-route-grid">{standaloneCapabilities.map((service) => { const index = servicePages.findIndex(({ slug }) => slug === service.slug); const Icon = icons[index]; return <article className="company-route-card" key={service.slug}>
+        <div className="company-route-image" style={{ backgroundImage: `url(${images[index]})` }}><span>{String(index + 1).padStart(2, "0")}</span></div>
+        <div className="company-route-card-body"><div className="company-route-card-marker"><Icon size={21} strokeWidth={1.35} aria-hidden="true" /><span>CAPABILITIES</span></div><h3>{service.title}</h3><p>{service.intro}</p><a href={`/services/${service.slug}`}>Explore this capability <ArrowDownRight size={17} /></a></div>
+      </article>; })}</div>
+    </div></section>
 
+    <section className="company-incorporation-framework"><div className="shell">
+      <div><p className="eyebrow light">A CONNECTED APPROACH</p><h2>One clear view of<br /><em>what needs to happen next.</em></h2></div>
+      <div className="company-framework-list"><p>The right support is rarely just one isolated task. We help connect the decision, documentation and follow-through so the work remains clear throughout.</p><ul><li><Check size={16} />Advice shaped around the specific business, activity and point of change</li><li><Check size={16} />Documents, filings and practical next actions treated as one workstream</li><li><Check size={16} />Clear ownership and a dependable record for what follows</li></ul><a href="/contact" className="button button-light">Discuss your requirements <ArrowUpRight size={17} /></a></div>
+    </div></section>
     <SiteFooter />
   </main>;
 }

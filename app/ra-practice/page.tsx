@@ -3,14 +3,16 @@ import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
 import { heroTitleClass } from "../../lib/hero-title";
 
+const unsplashPhoto = (id: string) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=1400&q=85`;
+
 const raPracticeRoutes = [
-  { title: "SEBI registration & compliance setup", copy: "A considered starting framework for regulated activity, registration inputs and the first operating controls.", href: "/services/sebi-compliance", image: "/images/sattva/practice-areas/sebi-regulatory.jpg", icon: ShieldCheck },
-  { title: "SEBI regulatory practice", copy: "Practical support for the regulatory questions, documentation and ongoing discipline behind a growing practice.", href: "/practice-areas/sebi-regulatory-practice", image: "/images/sattva/practice-areas/sebi-regulatory.jpg", icon: Landmark },
-  { title: "Investment adviser registration", copy: "Build a client-focused advisory practice around readiness, suitability, documentation and a clear compliance rhythm.", href: "/practice-areas/investment-adviser-registration", image: "/images/sattva/practice-areas/investment-advisory.jpg", icon: BadgeCheck },
-  { title: "Research analyst registration", copy: "Prepare the registration route and the disclosure, research and record-keeping foundation that supports it.", href: "/practice-areas/research-analyst-registration", image: "/images/sattva/practice-areas/sebi-regulatory.jpg", icon: FileCheck2 },
-  { title: "Audit readiness & regulatory filings", copy: "Keep records, policies, review points and filing actions organised before an audit or regulatory milestone arrives.", href: "/services/audit-readiness", image: "/images/sattva/practice-areas/corporate-governance.jpg", icon: ClipboardCheck },
-  { title: "Annual and ongoing compliance", copy: "Create a dependable annual rhythm for recurring obligations, evidence trails and changes that need attention.", href: "/services/annual-compliance", image: "/images/sattva/practice-areas/corporate-governance.jpg", icon: Check },
-  { title: "Registrations & operating licences", copy: "Identify and coordinate the practical registrations that support a compliant launch and day-to-day operation.", href: "/services/registrations-licences", image: "/images/sattva/practice-areas/startup-growth.jpg", icon: Scale },
+  { title: "SEBI registration & compliance setup", copy: "A considered starting framework for regulated activity, registration inputs and the first operating controls.", href: "/services/sebi-compliance", image: unsplashPhoto("1556761175-b413da4baf72"), icon: ShieldCheck },
+  { title: "SEBI regulatory practice", copy: "Practical support for the regulatory questions, documentation and ongoing discipline behind a growing practice.", href: "/practice-areas/sebi-regulatory-practice", image: unsplashPhoto("1521737711867-e3b97375f902"), icon: Landmark },
+  { title: "Investment adviser registration", copy: "Build a client-focused advisory practice around readiness, suitability, documentation and a clear compliance rhythm.", href: "/practice-areas/investment-adviser-registration", image: unsplashPhoto("1497366754035-f200968a6e72"), icon: BadgeCheck },
+  { title: "Research analyst registration", copy: "Prepare the registration route and the disclosure, research and record-keeping foundation that supports it.", href: "/practice-areas/research-analyst-registration", image: unsplashPhoto("1497366216548-37526070297c"), icon: FileCheck2 },
+  { title: "Audit readiness & regulatory filings", copy: "Keep records, policies, review points and filing actions organised before an audit or regulatory milestone arrives.", href: "/services/audit-readiness", image: unsplashPhoto("1524758631624-e2822e304c36"), icon: ClipboardCheck },
+  { title: "Annual and ongoing compliance", copy: "Create a dependable annual rhythm for recurring obligations, evidence trails and changes that need attention.", href: "/services/annual-compliance", image: unsplashPhoto("1542744173-8e7e53415bb0"), icon: Check },
+  { title: "Registrations & operating licences", copy: "Identify and coordinate the practical registrations that support a compliant launch and day-to-day operation.", href: "/services/registrations-licences", image: unsplashPhoto("1531482615713-2afd69097998"), icon: Scale },
 ] as const;
 
 export default function RaPracticePage() {

@@ -44,6 +44,7 @@ export default function SiteFooter() {
           <a href="/">Home</a>
           <a href="/about">About us</a>
           <a href="/services">Capabilities</a>
+          <a href="/practice-areas">Practice areas</a>
           <a href="/blog">Notes from the practice</a>
           <a href="/testimonials">Client testimonials</a>
         </div>

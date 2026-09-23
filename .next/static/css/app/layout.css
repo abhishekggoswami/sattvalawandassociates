@@ -2257,3 +2257,25 @@ main#home .newsletter form>div{position:relative}main#home .newsletter input{bac
   .site-header .mobile-sub-link{font-size:13px}
 }
 
+/* Company Incorporation and RA Practice now share the current full-bleed CTA
+   finish instead of the earlier white surround and solid inset panel. */
+main.company-incorporation-page .company-incorporation-framework{position:relative;isolation:isolate;overflow:hidden;padding:clamp(40px,5vw,68px) 0;background:linear-gradient(118deg,#555733 0%,#8c8c60 38%,#b0aa79 55%,#72754b 100%);background-size:180% 180%;color:#fff;text-align:left;animation:detail-cta-field 14s ease-in-out infinite alternate}
+main.company-incorporation-page .company-incorporation-framework::before{content:'';position:absolute;z-index:-1;inset:0;opacity:.5;background:radial-gradient(circle at 15% 105%,rgba(239,234,182,.32),transparent 34%),radial-gradient(circle at 90% -15%,rgba(255,255,247,.19),transparent 32%),repeating-linear-gradient(120deg,rgba(255,255,255,.045) 0 1px,transparent 1px 17px);animation:detail-cta-light 11s linear infinite}
+main.company-incorporation-page .company-incorporation-framework::after{content:'';position:absolute;z-index:-1;top:0;left:-30%;width:28%;height:1px;background:linear-gradient(90deg,transparent,#fff8c9,transparent);box-shadow:0 0 18px rgba(255,247,191,.85);animation:detail-cta-line 7s ease-in-out infinite}
+main.company-incorporation-page .company-incorporation-framework>.shell{position:relative;display:grid;grid-template-columns:minmax(0,.82fr) minmax(300px,1.18fr);gap:clamp(38px,9vw,150px);width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(25px,7vw,100px);background:transparent}
+main.company-incorporation-page .company-incorporation-framework .eyebrow{margin:0 0 14px;color:#f7f3d5}
+main.company-incorporation-page .company-incorporation-framework h2{max-width:620px;margin:0;padding-bottom:.1em;background:linear-gradient(105deg,#fff 0%,#fff 34%,#f6efb5 48%,#fff 61%,#fff 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;font:400 clamp(31px,3.35vw,50px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em;animation:detail-cta-text-flow 6.5s linear infinite}
+main.company-incorporation-page .company-incorporation-framework h2 em{color:inherit}
+main.company-incorporation-page .company-framework-list{text-align:left}
+main.company-incorporation-page .company-framework-list>p{max-width:610px;margin:3px 0 24px;color:#fbfbf4;font-size:14px;line-height:1.8}
+main.company-incorporation-page .company-framework-list ul{margin:0 0 25px;padding:21px 0;border-color:rgba(255,255,247,.32)}
+main.company-incorporation-page .company-framework-list li{color:#f4f4eb}
+main.company-incorporation-page .company-framework-list li svg{color:#f5edb7}
+main.company-incorporation-page .company-incorporation-framework .button-light{padding:11px 18px;border:1px solid rgba(255,255,248,.76);background:rgba(53,55,27,.12);box-shadow:inset 0 0 0 1px rgba(255,255,247,.08);color:#fff;font-size:9px;transition:background .24s ease,color .24s ease,transform .24s ease,border-color .24s ease}
+main.company-incorporation-page .company-incorporation-framework .button-light:hover{border-color:#fff;background:#fff;color:#4d4e31;transform:translateY(-2px)}
+main.capabilities-overview-page .company-route-card:last-child{grid-column:auto}
+main.practice-areas-overview-page .company-route-card:last-child{grid-column:auto}
+@media(max-width:900px){main.company-incorporation-page .company-incorporation-framework{padding:30px 0;text-align:center}main.company-incorporation-page .company-incorporation-framework>.shell{grid-template-columns:1fr;gap:27px;padding:0 clamp(25px,7vw,100px)}main.company-incorporation-page .company-incorporation-framework h2{margin-left:auto;margin-right:auto}main.company-incorporation-page .company-framework-list{text-align:center}main.company-incorporation-page .company-framework-list>p{margin:0 auto 21px}main.company-incorporation-page .company-framework-list li{text-align:left}}
+@media(max-width:560px){main.company-incorporation-page .company-incorporation-framework>.shell{padding:40px 23px}main.company-incorporation-page .company-incorporation-framework .button-light{width:100%;min-height:48px}}
+@media(prefers-reduced-motion:reduce){main.company-incorporation-page .company-incorporation-framework,main.company-incorporation-page .company-incorporation-framework::before,main.company-incorporation-page .company-incorporation-framework::after,main.company-incorporation-page .company-incorporation-framework h2{animation:none}}
+
