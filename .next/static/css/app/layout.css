@@ -888,19 +888,24 @@ main.about-page .about-hero-plain .hero-shade::before{background:rgba(28,30,8,.8
 main.about-page .about-story-grid{grid-template-columns:minmax(0,720px);justify-content:center}
 main.about-page .about-story-copy{padding-top:0}
 main.about-page .about-team{display:none}
-main.about-page .about-approach{padding-top:clamp(86px,9vw,138px);padding-bottom:clamp(88px,9vw,132px)}
+main.about-page .about-approach{position:relative;overflow:hidden;padding-top:clamp(86px,9vw,138px);padding-bottom:clamp(88px,9vw,132px);background:linear-gradient(135deg,#fff 0%,#fafbf7 100%)}
 main.about-page .about-approach-heading{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(280px,.72fr);justify-content:space-between;gap:clamp(45px,9vw,145px);align-items:end}
-main.about-page .about-approach-heading h2{margin:0;color:#252610;font:400 clamp(34px,3.45vw,56px)/1.18 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em}
+main.about-page .about-approach-heading h2{margin:0;color:#252610;font:400 clamp(34px,3.45vw,56px)/1.18 'Libre Baskerville',Georgia,serif;letter-spacing:-.052em}
 main.about-page .about-approach-heading h2 em{color:#8e8c60}
 main.about-page .about-approach-heading>p{max-width:430px;margin:0 0 5px;color:#606257;font-size:14px;line-height:1.8}
-main.about-page .about-approach-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:clamp(50px,5.6vw,82px);border-top:1px solid #d5d7ca;border-bottom:1px solid #d5d7ca}
-main.about-page .about-approach-list article{display:flex;min-height:290px;flex-direction:column;padding:30px clamp(23px,2.5vw,43px) 34px;border-right:1px solid #d5d7ca}
-main.about-page .about-approach-list article:first-child{background:#f1f3ed}
-main.about-page .about-approach-list article:last-child{border-right:0}
-main.about-page .about-approach-list span{color:#8e8c60;font-size:10px;font-weight:700;letter-spacing:.16em}
-main.about-page .about-approach-list h3{max-width:240px;margin:45px 0 15px;color:#292a1c;font:400 clamp(20px,1.65vw,26px)/1.26 'Libre Baskerville',Georgia,serif;letter-spacing:-.045em}
-main.about-page .about-approach-list p{max-width:300px;margin:0;color:#65675d;font-size:13px;line-height:1.75}
-main.about-page .about-approach-link{margin-top:29px}
+main.about-page .about-approach-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:clamp(50px,5.6vw,82px)}
+main.about-page .about-approach-list article{position:relative;display:flex;min-height:300px;flex-direction:column;overflow:hidden;padding:31px clamp(23px,2.5vw,43px) 35px;border:1px solid #d5d7ca;background:#f1f3ed;transition:transform .42s cubic-bezier(.22,.8,.28,1),background .42s ease,border-color .42s ease,box-shadow .42s ease}
+main.about-page .about-approach-list article:nth-child(2){background:#fafbf8}main.about-page .about-approach-list article:nth-child(3){background:#e9eae1}
+main.about-page .about-approach-list article::before{content:'';position:absolute;z-index:0;top:0;left:0;width:100%;height:3px;background:#8e8c60;transform:scaleX(.18);transform-origin:left;transition:transform .45s cubic-bezier(.22,.8,.28,1)}
+main.about-page .about-approach-list article::after{content:'0' counter(about-approach);counter-increment:about-approach;position:absolute;right:-7px;bottom:-30px;color:rgba(116,117,74,.07);font:400 142px/.8 'Libre Baskerville',Georgia,serif;letter-spacing:-.12em;pointer-events:none;transition:transform .5s cubic-bezier(.22,.8,.28,1),color .4s ease}
+main.about-page .about-approach-list{counter-reset:about-approach}
+main.about-page .about-approach-list span{position:relative;z-index:1;display:grid;width:36px;height:36px;place-items:center;border:1px solid #c7c9b9;border-radius:50%;color:#77764e;font-size:9px;font-weight:700;letter-spacing:.08em;transition:background .32s ease,color .32s ease,border-color .32s ease,transform .38s cubic-bezier(.22,.8,.28,1)}
+main.about-page .about-approach-list h3{position:relative;z-index:1;max-width:255px;margin:38px 0 15px;color:#292a1c;font:400 clamp(21px,1.65vw,26px)/1.24 'Libre Baskerville',Georgia,serif;letter-spacing:-.04em;transition:color .3s ease,transform .38s cubic-bezier(.22,.8,.28,1)}
+main.about-page .about-approach-list p{position:relative;z-index:1;max-width:300px;margin:0;color:#65675d;font-size:13px;line-height:1.75;transition:color .3s ease,transform .38s cubic-bezier(.22,.8,.28,1)}
+@media(hover:hover) and (pointer:fine){main.about-page .about-approach-list article:hover{z-index:1;border-color:#9a996c;background:#fff;box-shadow:0 20px 38px rgba(37,39,16,.13);transform:translateY(-9px)}main.about-page .about-approach-list article:hover::before{transform:scaleX(1)}main.about-page .about-approach-list article:hover::after{color:rgba(116,117,74,.13);transform:translate(-7px,-10px)}main.about-page .about-approach-list article:hover span{border-color:#8e8c60;background:#8e8c60;color:#fff;transform:rotate(-8deg)}main.about-page .about-approach-list article:hover h3,main.about-page .about-approach-list article:hover p{transform:translateY(-4px)}main.about-page .about-approach-list article:hover p{color:#4e5043}}
+main.about-page .about-approach-link{display:inline-flex;align-items:center;gap:17px;margin-top:25px;padding:12px 16px;border:1px solid #8e8c60;border-bottom:1px solid #8e8c60;color:#41432d;font-size:10px;letter-spacing:.15em;transition:background .28s ease,color .28s ease,transform .28s ease,box-shadow .28s ease}
+main.about-page .about-approach-link span{font-size:20px;line-height:.5;transition:transform .28s ease}
+@media(hover:hover) and (pointer:fine){main.about-page .about-approach-link:hover{background:#8e8c60;color:#fff;box-shadow:0 10px 19px rgba(54,56,27,.18);transform:translateY(-3px)}main.about-page .about-approach-link:hover span{transform:translateX(5px)}}
 @media(max-width:900px){
   main.about-page .about-story-grid{grid-template-columns:1fr}
   main.about-page .about-approach{padding-top:76px;padding-bottom:76px}
@@ -2019,4 +2024,203 @@ main.practice-area-page .detail-intro{padding-top:clamp(76px,8vw,128px);padding-
 @media(max-width:900px){.detail-heading,.detail-intro-grid,.detail-process,.detail-ready>.shell{grid-template-columns:1fr;gap:28px}.detail-heading .eyebrow{grid-column:auto}.detail-heading{min-width:0;margin-bottom:40px}.detail-heading>p:not(.eyebrow){width:100%;max-width:100%;min-width:0;overflow-wrap:anywhere;word-break:normal;white-space:normal!important}.detail-intro-image,.detail-intro-image img,.detail-process-image,.detail-process-image img{min-height:285px}.detail-ready ul{grid-template-columns:1fr}.detail-cta{padding:30px 0}.detail-cta>.shell{margin:0 auto}.detail-card-grid article{min-height:205px}}
 @media(max-width:560px){.detail-intro-copy>p:not(.eyebrow){font-size:14px;line-height:1.82}.detail-card-grid,.detail-process-list{grid-template-columns:1fr}.detail-card-grid{gap:12px}.detail-card-grid article{min-height:182px;padding:24px 22px}.detail-card-top i{width:47px;height:47px}.detail-card-grid h3{margin-top:24px;font-size:22px}.detail-process-list article{min-height:150px;padding:23px 22px}.detail-process-list span{margin-bottom:22px}.detail-ready{padding:66px 0}.detail-ready ul{gap:0}.detail-cta>.shell{padding:40px 23px}.detail-cta-button{width:100%}}
 @media(prefers-reduced-motion:reduce){.detail-heading h2,.detail-heading>p:not(.eyebrow),.detail-cta,.detail-cta::before,.detail-cta::after,.detail-cta h2 span,.detail-cta h2 em{animation:none}.detail-intro-image img,.detail-card-grid article,.detail-card-top i,.detail-card-grid>article>svg,.detail-card-grid article::before{transition:none}}
+
+/* Apply the same full-bleed, living CTA treatment to the main site pages. */
+main .services-cta,main .testimonials-cta,main .blog-updates,main .article-page-cta,main .about-practice-focus,main#home .newsletter{position:relative;isolation:isolate;overflow:hidden;width:100%;max-width:none;margin:0;padding:clamp(31px,3.8vw,52px) clamp(25px,7vw,100px);background:linear-gradient(118deg,#555733 0%,#8c8c60 38%,#b0aa79 55%,#72754b 100%);background-size:180% 180%;color:#fff;text-align:center;animation:detail-cta-field 14s ease-in-out infinite alternate}
+main .services-cta::before,main .testimonials-cta::before,main .blog-updates::before,main .article-page-cta::before,main .about-practice-focus::before,main#home .newsletter::before{content:'';position:absolute;z-index:-1;inset:0;opacity:.5;background:radial-gradient(circle at 15% 105%,rgba(239,234,182,.32),transparent 34%),radial-gradient(circle at 90% -15%,rgba(255,255,247,.19),transparent 32%),repeating-linear-gradient(120deg,rgba(255,255,255,.045) 0 1px,transparent 1px 17px);animation:detail-cta-light 11s linear infinite}
+main .services-cta>.shell,main .testimonials-cta>.shell,main .blog-updates>.shell,main .article-page-cta>.shell,main .about-practice-focus>.shell{position:relative;width:100%;max-width:none;margin:0;padding:0;background:transparent}main#home .newsletter>*{position:relative}
+main .services-cta h2,main .testimonials-cta h2,main .blog-updates h2,main .article-page-cta h2,main .about-practice-focus h2,main#home .newsletter h2{margin:0;padding-bottom:.1em;background:linear-gradient(105deg,#fff 0%,#fff 34%,#f6efb5 48%,#fff 61%,#fff 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;font:400 clamp(31px,3.35vw,50px)/1.2 'Libre Baskerville',Georgia,serif;letter-spacing:-.065em;animation:detail-cta-text-flow 6.5s linear infinite}
+main .services-cta h2 em,main .testimonials-cta h2 em,main .blog-updates h2 em,main .article-page-cta h2 em,main .about-practice-focus h2 em,main#home .newsletter h2 em{color:inherit}
+main .services-cta>.shell>p:not(.eyebrow),main .testimonials-cta>.shell>p:not(.eyebrow),main .blog-updates>.shell>p:not(.eyebrow),main .article-page-cta>.shell>p:not(.eyebrow){margin:15px auto 21px;color:#fbfbf4;font-size:13px;line-height:1.7}main#home .newsletter form p{color:#fbfbf4}
+main .services-cta .button-light,main .testimonials-cta .button-light,main .blog-updates .button-light,main .article-page-cta .button-light,main .about-practice-focus .button-light{padding:11px 18px;border:1px solid rgba(255,255,248,.76);background:rgba(53,55,27,.12);box-shadow:inset 0 0 0 1px rgba(255,255,247,.08);color:#fff;font-size:9px;transition:background .24s ease,color .24s ease,transform .24s ease,border-color .24s ease}main .services-cta .button-light:hover,main .testimonials-cta .button-light:hover,main .blog-updates .button-light:hover,main .article-page-cta .button-light:hover,main .about-practice-focus .button-light:hover{border-color:#fff;background:#fff;color:#4d4e31;transform:translateY(-2px)}
+main#home .newsletter form>div{position:relative}main#home .newsletter input{background:rgba(255,255,251,.94)}main#home .newsletter button{background:#52552f;transition:background .24s ease}main#home .newsletter button:hover{background:#313315}
+@media(max-width:900px){main .services-cta,main .testimonials-cta,main .blog-updates,main .article-page-cta,main .about-practice-focus,main#home .newsletter{padding:30px 24px}main#home .newsletter{grid-template-columns:1fr;gap:26px}}
+@media(prefers-reduced-motion:reduce){main .services-cta,main .testimonials-cta,main .blog-updates,main .article-page-cta,main .about-practice-focus,main#home .newsletter,main .services-cta::before,main .testimonials-cta::before,main .blog-updates::before,main .article-page-cta::before,main .about-practice-focus::before,main#home .newsletter::before,main .services-cta h2,main .testimonials-cta h2,main .blog-updates h2,main .article-page-cta h2,main .about-practice-focus h2,main#home .newsletter h2{animation:none}}
+
+/* One consistent CTA geometry: remove the legacy angled light-button edge. */
+.button-light{clip-path:none}
+
+/* About, Blog and Testimonials previously retained page-specific mobile hero
+   coordinates. Keep them on the same landing-card system as every other
+   top-level page so the title, metadata and white action label never drift. */
+@media(max-width:900px){
+  main.about-page .about-hero .about-hero-copy,
+  main .blog-hero .blog-hero-copy,
+  main .testimonials-hero .testimonials-hero-copy{
+    top:auto;
+    right:auto;
+    bottom:16px;
+    left:16px;
+    width:calc(100% - 32px);
+    max-width:none;
+    box-sizing:border-box;
+    align-items:flex-start;
+    padding:28px 24px 24px;
+    background:#f8f8f3;
+    color:#242610;
+    text-align:left;
+  }
+  main.about-page .about-hero .about-hero-copy .eyebrow,
+  main .blog-hero .blog-hero-copy .eyebrow,
+  main .testimonials-hero .testimonials-hero-copy .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    margin:0 0 17px;
+    color:#85835b;
+    font-size:8px;
+    letter-spacing:.16em;
+    line-height:1.35;
+  }
+  main.about-page .about-hero .about-hero-copy .eyebrow em,
+  main .blog-hero .blog-hero-copy .eyebrow em,
+  main .testimonials-hero .testimonials-hero-copy .eyebrow em{color:#4c4e32;font-size:14px;line-height:1.2}
+  main.about-page .about-hero .about-hero-copy .eyebrow i,
+  main .blog-hero .blog-hero-copy .eyebrow i,
+  main .testimonials-hero .testimonials-hero-copy .eyebrow i{width:23px;margin:0;border-color:#aaa77b}
+  main.about-page .about-hero .about-hero-copy h1,
+  main .blog-hero .blog-hero-copy h1,
+  main .testimonials-hero .testimonials-hero-copy h1{
+    max-width:100%;
+    margin:0;
+    color:#22240f;
+    font-size:clamp(28px,7.25vw,39px);
+    line-height:1.16;
+    letter-spacing:-.05em;
+    text-wrap:balance;
+  }
+  main.about-page .about-hero .about-hero-copy h1 em,
+  main .blog-hero .blog-hero-copy h1 em,
+  main .testimonials-hero .testimonials-hero-copy h1 em{color:#89845a}
+  main.about-page .about-hero .about-hero-copy .hero-actions,
+  main .blog-hero .blog-hero-copy .hero-actions,
+  main .testimonials-hero .testimonials-hero-copy .hero-actions{align-self:stretch;width:100%;margin:25px 0 0!important}
+  main.about-page .about-hero .about-hero-copy .hero-actions .button,
+  main .blog-hero .blog-hero-copy .hero-actions .button,
+  main .testimonials-hero .testimonials-hero-copy .hero-actions .button{width:100%;min-width:0;min-height:54px;padding:16px 18px;background:#252710;color:#fff}
+}
+@media(max-width:520px){
+  main.about-page .about-hero .about-hero-copy,
+  main .blog-hero .blog-hero-copy,
+  main .testimonials-hero .testimonials-hero-copy{bottom:12px;left:12px;width:calc(100% - 24px);padding:25px 22px 22px}
+  main.about-page .about-hero .about-hero-copy .eyebrow,
+  main .blog-hero .blog-hero-copy .eyebrow,
+  main .testimonials-hero .testimonials-hero-copy .eyebrow{margin-bottom:15px}
+  main.about-page .about-hero .about-hero-copy h1,
+  main .blog-hero .blog-hero-copy h1,
+  main .testimonials-hero .testimonials-hero-copy h1{font-size:clamp(27px,7.7vw,33px);line-height:1.16}
+  main.about-page .about-hero .about-hero-copy .hero-actions,
+  main .blog-hero .blog-hero-copy .hero-actions,
+  main .testimonials-hero .testimonials-hero-copy .hero-actions{margin-top:22px!important}
+  main.about-page .about-hero .about-hero-copy .hero-actions .button,
+  main .blog-hero .blog-hero-copy .hero-actions .button,
+  main .testimonials-hero .testimonials-hero-copy .hero-actions .button{min-height:52px}
+}
+
+/* Phone CTA system — all page-level calls to action use the same full-bleed
+   treatment and interior proportions as the service-detail CTA. */
+@media(max-width:900px){
+  main .practice-cta,
+  main.company-incorporation-page .company-incorporation-framework{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    background:linear-gradient(118deg,#555733 0%,#8c8c60 38%,#b0aa79 55%,#72754b 100%);
+    background-size:180% 180%;
+    color:#fff;
+    text-align:center;
+    animation:detail-cta-field 14s ease-in-out infinite alternate;
+  }
+  main .practice-cta::before,
+  main.company-incorporation-page .company-incorporation-framework::before{content:'';position:absolute;z-index:-1;inset:0;opacity:.5;background:radial-gradient(circle at 15% 105%,rgba(239,234,182,.32),transparent 34%),radial-gradient(circle at 90% -15%,rgba(255,255,247,.19),transparent 32%),repeating-linear-gradient(120deg,rgba(255,255,255,.045) 0 1px,transparent 1px 17px);animation:detail-cta-light 11s linear infinite}
+  main .practice-cta::after,
+  main.company-incorporation-page .company-incorporation-framework::after{content:'';position:absolute;z-index:-1;top:0;left:-30%;width:28%;height:1px;background:linear-gradient(90deg,transparent,#fff8c9,transparent);box-shadow:0 0 18px rgba(255,247,191,.85);animation:detail-cta-line 7s ease-in-out infinite}
+  main .detail-cta,
+  main .practice-cta,
+  main .services-cta,
+  main .testimonials-cta,
+  main .blog-updates,
+  main .article-page-cta,
+  main .about-practice-focus,
+  main.company-incorporation-page .company-incorporation-framework{padding:30px 0}
+  main .detail-cta>.shell,
+  main .practice-cta>.shell,
+  main .services-cta>.shell,
+  main .testimonials-cta>.shell,
+  main .blog-updates>.shell,
+  main .article-page-cta>.shell,
+  main .about-practice-focus>.shell,
+  main.company-incorporation-page .company-incorporation-framework>.shell{position:relative;width:100%;max-width:none;margin:0 auto;padding:0 clamp(25px,7vw,100px);background:transparent}
+  main .practice-cta h2,
+  main .services-cta h2,
+  main .testimonials-cta h2,
+  main .blog-updates h2,
+  main .article-page-cta h2,
+  main .about-practice-focus h2,
+  main.company-incorporation-page .company-incorporation-framework h2{font-size:clamp(31px,6.4vw,44px);line-height:1.2}
+  main .practice-cta h2,
+  main.company-incorporation-page .company-incorporation-framework h2{margin:0;padding-bottom:.1em;background:linear-gradient(105deg,#fff 0%,#fff 34%,#f6efb5 48%,#fff 61%,#fff 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:detail-cta-text-flow 6.5s linear infinite}
+  main .practice-cta h2 em,
+  main.company-incorporation-page .company-incorporation-framework h2 em{color:inherit}
+  main .practice-cta .button-light,
+  main.company-incorporation-page .company-incorporation-framework .button-light{border-color:rgba(255,255,248,.76);background:rgba(53,55,27,.12);box-shadow:inset 0 0 0 1px rgba(255,255,247,.08);color:#fff;font-size:9px}
+  main .practice-cta>.shell>p:not(.eyebrow),
+  main .services-cta>.shell>p:not(.eyebrow),
+  main .testimonials-cta>.shell>p:not(.eyebrow),
+  main .blog-updates>.shell>p:not(.eyebrow),
+  main .article-page-cta>.shell>p:not(.eyebrow){max-width:500px;margin:15px auto 21px;font-size:13px;line-height:1.7}
+}
+@media(max-width:560px){
+  main .detail-cta>.shell,
+  main .practice-cta>.shell,
+  main .services-cta>.shell,
+  main .testimonials-cta>.shell,
+  main .blog-updates>.shell,
+  main .article-page-cta>.shell,
+  main .about-practice-focus>.shell,
+  main.company-incorporation-page .company-incorporation-framework>.shell{padding:40px 23px}
+  main .practice-cta .button-light,
+  main .services-cta .button-light,
+  main .testimonials-cta .button-light,
+  main .blog-updates .button-light,
+  main .article-page-cta .button-light,
+  main .about-practice-focus .button-light,
+  main.company-incorporation-page .company-incorporation-framework .button-light,
+  main .detail-cta-button{width:100%;min-height:48px}
+  main#home .newsletter{padding:40px 23px}
+}
+
+/* A phone-specific testimonial composition: one image, one readable quote,
+   and clear pagination. It deliberately replaces the compressed desktop rail. */
+@media(max-width:620px){
+  main .testimonials-section.testimonials-section{padding:66px 0 70px;background:#fbfcf8}
+  main .testimonials-content{width:min(100% - 40px,460px)}
+  main .testimonials-section .testimonials-heading h2{font-size:clamp(35px,10.2vw,43px);line-height:1.12;letter-spacing:-.065em}
+  main .testimonials-section .testimonials-intro{margin-top:24px;color:#5e6055;font-size:14px;line-height:1.78}
+  main .testimonials-section .testimonial-stage{display:grid;grid-template-columns:1fr;width:100%;min-height:0;margin-top:37px;overflow:hidden;border:1px solid #d9dace;background:#fff;box-shadow:0 16px 34px rgba(41,43,16,.09)}
+  main .testimonials-section .testimonial-preview{display:none}
+  main .testimonials-section .testimonial-feature-image{order:0;height:clamp(220px,65vw,300px);margin:0;overflow:hidden;background:#d5d7cb}
+  main .testimonials-section .testimonial-feature-image img{display:block;width:100%;height:100%;min-height:0;-o-object-fit:cover;object-fit:cover;-o-object-position:center top;object-position:center top}
+  main .testimonials-section .testimonial-quote{order:1;min-height:0;height:auto;padding:29px 23px 27px;background:#fff;box-shadow:none}
+  main .testimonials-section .testimonial-quote>svg{width:31px;height:31px}
+  main .testimonials-section .testimonial-quote>p{max-width:none;margin:16px 0 23px;color:#303126;font:400 15px/1.66 'DM Sans',Arial,sans-serif;letter-spacing:0}
+  main .testimonials-section .testimonial-quote strong{font-size:13px}
+  main .testimonials-section .testimonial-quote small{font-size:9px;line-height:1.5}
+  main .testimonials-section .testimonial-controls{width:100%;margin:20px 0 0;padding:0;justify-content:center}
+  main .testimonials-section .testimonial-controls>div{gap:10px}
+  main .testimonials-section .testimonial-controls>div button{width:8px;height:8px}
+  main .testimonials-closing{gap:22px;margin-top:42px;padding-top:29px}
+  main .testimonials-closing p:not(.eyebrow){font-size:13px;line-height:1.75}
+  main .testimonials-closing .text-link{padding:12px 0 6px}
+}
+@media(prefers-reduced-motion:reduce){
+  main .practice-cta,
+  main .practice-cta::before,
+  main .practice-cta::after,
+  main .practice-cta h2,
+  main.company-incorporation-page .company-incorporation-framework,
+  main.company-incorporation-page .company-incorporation-framework::before,
+  main.company-incorporation-page .company-incorporation-framework::after,
+  main.company-incorporation-page .company-incorporation-framework h2{animation:none}
+}
 
